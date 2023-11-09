@@ -1,0 +1,85 @@
+//기본 폰트 : 한글/영문 Prestendard(프리텐다드)
+@font-face {
+  font-family: $font-default-name;
+  font-weight: 400;
+	font-display: swap;
+	src: local('#{$font-default-name} Regular'), 
+    url('/public/fonts/#{$font-default-url}/woff2/Pretendard-Regular.woff2') format('woff2'), 
+    url('/public/fonts/#{$font-default-url}/woff/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-default-name;
+  font-weight: 500;
+	font-display: swap;
+	src: local('#{$font-default-name} Medium'), 
+    url('/public/fonts/#{$font-default-url}/woff2/Pretendard-Medium.woff2') format('woff2'), 
+    url('/public/fonts/#{$font-default-url}/woff/Pretendard-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-default-name;
+  font-weight: 700;
+	font-display: swap;
+	src: local('#{$font-default-name} Bold'), 
+    url('/public/fonts/#{$font-default-url}/woff2/Pretendard-Bold.woff2') format('woff2'), 
+    url('/public/fonts/#{$font-default-url}/woff/Pretendard-Bold.woff') format('woff');
+}
+
+//포인트 폰트 : Libre Baskerville(바스커빌, 홈페이지 기획전 1~5, 베스트 랭킹에 사용)
+@font-face {
+  font-family: $font-point-name;
+  font-weight: 400;
+	font-display: swap;
+	src: local('Libre Baskerville Regular'), 
+    url('/public/fonts/#{$font-point-url}/woff2/LibreBaskerville-Regular.woff2') format('woff2'), 
+    url('/public/fonts/#{$font-point-url}/woff/LibreBaskerville-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-point-name;
+  font-weight: 400;
+  font-style: italic;
+	font-display: swap;
+	src: local('Libre Baskerville Italic'), 
+    url('/public/fonts/#{$font-point-url}/woff2/LibreBaskerville-Italic.woff2') format('woff2'), 
+    url('/public/fonts/#{$font-point-url}/woff/LibreBaskerville-Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: $font-point-name;
+  font-weight: 700;
+	font-display: swap;
+	src: local('Libre Baskerville Bold'), 
+    url('/public/fonts/#{$font-point-url}/woff2/LibreBaskerville-Bold.woff2') format('woff2'), 
+    url('/public/fonts/#{$font-point-url}/woff/LibreBaskerville-Bold.woff') format('woff');
+}
+
+.title-page {
+  margin-bottom: 40px;
+  font: {
+    size: 40px;
+    weight: 700;
+  }
+  text-align: center;
+}
+
+.title-section {
+  margin-bottom: 20px;
+  font: {
+    size: 30px;
+    weight: 700;
+  }
+  text-align: center;
+  @include tablet {
+    margin-bottom: 40px;
+  }
+}
+
+.title-group {
+  font: {
+    size: 24px;
+    weight: 700;
+  }
+  text-align: center;
+}

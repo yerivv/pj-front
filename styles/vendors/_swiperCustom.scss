@@ -1,0 +1,119 @@
+@charset "utf-8";
+.play-handler {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.mySwiper {
+  height: 100%;
+}
+.swiper-slide:hover {
+  cursor: pointer;
+}
+.swiper-pagination-total {
+  opacity: 0.5 !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: relative;
+  z-index: 500;
+  width: 60px !important;
+  height: 60px !important;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  transition: opacity 200ms;
+}
+.swiper-button-prev {
+  left: 0 !important;
+}
+.swiper-button-next {
+  right: 0 !important;
+}
+
+/* .mySwiper:hover .swiper-button-prev,
+.mySwiper:hover .swiper-button-next {
+  background-color: rgba(0, 0, 0, 0.5);
+} */
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@media all and (max-width: 500px) {
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}
+/* .swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 0.5;
+  background-color: #000;
+} */
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #fff;
+  font-size: 2rem !important;
+}
+
+.swiper-pagination-progressbar {
+  height: 2px !important;
+  /* background: rgba(255, 255, 255, 0.2) !important; */
+}
+.banner-progressbar {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+.swiper-pagination-progressbar-fill {
+  background: rgba(255, 255, 255, 1) !important;
+}
+
+/* 재생 slide */
+/* .playing-swiper {
+    position: absolute;
+} */
+
+.playing-swiper .swiper-pagination {
+  width: 1300px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+.for-pagination-swiper {
+  transform: translateY(-740px);
+  width: 1300px;
+  height: 740px;
+  overflow: visible;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+@media only screen and (max-width: 1023px) {
+  .for-pagination-swiper {
+    width: 100% !important;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .swiper-scrollbar {
+    margin-top: 1rem;
+  }
+}
+
+.swiper-scrollbar {
+  background: rgba(0, 0, 0, 0.25);
+  height: 2px !important;
+}
+.swiper-scrollbar-drag {
+  background-color: black !important;
+}

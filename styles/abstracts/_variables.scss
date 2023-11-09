@@ -1,0 +1,37 @@
+// color
+$color-black: #000;
+$color-white: #fff;
+$color-red: #e1251b;
+$color-blue: #5ba6d2;
+$color-gray1: #333;
+$color-gray2: #666;
+
+$color-bg1: #f5f5f5;
+$color-bg2: #f7f7f8;
+
+$color-line1: #dfdfdf;
+
+$point-default: #5ba6d2;
+$point-jinair: #2fb596;
+
+// font
+$font-default-url : '/static/fonts/Pretendard';
+$font-default-name : 'Pretendard';
+$font-point-url : '/static/fonts/Libre_Baskerville';
+$font-point-name : 'Libre Baskerville';
+
+//breakpoint
+$breakpoint-mobile: 1024px;
+$breakpoint-tablet: 1299px;
+$breakpoint-desktop: 1440px;
+
+//width
+$width-max: 1300px;
+
+//images url
+$image-url: '/assets/';
+$icon-url: '/assets/icons/';
+
+$radius: (
+  basic: 15px,
+)

@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+/* heart-to-heart */
+.heart-info {
+  .step-box {
+    ol {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      li {
+        width: 13%;
+        text-align: center;
+        i {
+          display: block;
+          position: relative;
+          width: 100%;
+          padding-bottom: 100%;
+          margin-bottom: 18px;
+          @include bg-center;
+        }
+        @for $i from 1 to 6 {
+          &.step#{$i} i {
+            background-image: url($icon-url+'icon-gift-info0'+$i+'.png');
+          }
+        }
+        &:not(:last-child) i:after {
+          position: absolute;
+          left: 100%;
+          top: calc(50% - 8px);
+          width: 65%;
+          height: 16px;
+          background: url($icon-url+'icon_arrow_step.png') center no-repeat;
+          background-size: auto 16px;
+          text-indent: -999em;
+          content: '다음';
+        }
+        div, p {
+          margin-top: 4px;
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 18px;
+        }
+        p {
+          font-weight: 400;
+        }
+      }
+      @include mobile {
+        flex-direction: column;
+        li {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          &:not(:last-child) {
+            margin-bottom: 40px;
+          }
+          i {
+            width: 87px;
+            padding-bottom: 87px;
+            margin-right: 10px;
+            margin-bottom: 0;
+          }
+          &:not(:last-child) i:after {
+            left: 23px;
+            top: 100%;
+            width: 40px;
+            height: 40px;
+            background: url($icon-url+'icon_arrow_step.png') center no-repeat;
+            background-size: auto 10px;
+            transform: rotate(90deg);
+          }
+          div, p {
+            margin-top: 0;
+            margin-right: 5px;
+            font-size: 14px;
+          }
+          .cont {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+          }
+        }
+      }
+    }
+  }
+  .note-box {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    padding: 21px 25px;
+    margin: 60px auto 0;
+    border: 1px solid #dfdfdf;
+    background-color: #fff;
+    i {
+      width: 37px;
+      height: 37px;
+      background-image: url($icon-url+'icon_note_b.png');
+      @include bg-center;
+      margin-right: 15px;
+      text-indent: -999em;
+    }
+    i + ul {
+      width: calc(100% - 52px);
+    }
+    li {
+      position: relative;
+      padding-left: 10px;
+      margin-top: 4px;
+      color: #666;
+      font-size: 15px;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '-';
+      }
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    @include mobile {
+      padding: 15px 20px;
+      margin-top: 20px;
+      i {
+        width: 33px;
+        height: 33px;
+        margin-right: 10px;
+      }
+      li {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.test-media {
+  background-color: blue;
+  color: #fff;
+  &::after {
+    content: 'PC'
+  }
+  
+  @include mobile {
+    background-color: red;
+    &::after {
+      content: 'Mobile'
+    }
+  }
+  @include tablet {
+    background-color: green;
+    &::after {
+      content: 'Tablet'
+    }
+  }
+}

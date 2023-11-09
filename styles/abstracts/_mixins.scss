@@ -1,0 +1,61 @@
+@mixin mobile {
+  @media (max-width: #{$breakpoint-mobile + 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px)
+    and (max-width: #{$breakpoint-tablet}) {
+    @content;
+  }
+}
+
+@mixin layoutTablet {
+  @media (max-width: #{$breakpoint-tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+
+@mixin max-width {
+  max-width: $width-max;
+  margin: 0 auto;
+}
+
+@mixin blind {
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+//말줄임표 믹스인 ($row => 줄 수)
+//ex. 2줄 말줄임 사용시 @include line-clamp(2)
+@mixin line-clamp($row) {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $row;
+  -webkit-box-orient: vertical;
+}
+
+@mixin bg-center {
+  background: {
+    size: contain;
+    position: center;
+    repeat: no-repeat;
+  }
+}
+
+@mixin border-radius($type) {
+  border-radius: map-get($radius, $type);
+}

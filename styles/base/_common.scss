@@ -1,0 +1,91 @@
+@charset "utf-8";
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #fff;
+  color: $color-black;
+  font: {
+    family: $font-default-name, serif;
+    size: 1.6rem;
+    weight: 400;
+  }
+  line-height: 1.25;
+}
+
+/* 마우스, 터치로 포커스 시 
+button:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: 1px 1px 5px rgba(1, 1, 0, .7);
+}
+a:focus:not(:focus-visible) {
+  outline: none;
+}*/
+
+/* 스킵 네비게이션 */
+.skip-navigation {
+  position: relative;
+  z-index: 9999;
+  .skip {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    background-color: #eee;
+    text-align: left;
+    padding: 5px; 
+    &:focus,
+    &:active {
+      top: 0;
+    }
+  }
+}
+
+#contents {
+  outline: 0;
+}
+
+.setcion-wrap {
+  @include max-width;
+}
+
+.blind {
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.title-sub {
+  margin-bottom: 60px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 0.95;
+  text-align: center;
+  @include mobile {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.32;
+    text-align: left;
+  }
+}
+
+.img-setting {
+  display: block;
+  max-width: 1600px;
+  margin: 0 auto;
+  span {
+    padding: 0 !important;
+  }
+  img {
+    position:relative !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+}

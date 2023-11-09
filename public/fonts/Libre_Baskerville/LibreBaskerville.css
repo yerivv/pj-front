@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-weight: 400;
+	font-display: swap;
+	src: local('Libre Baskerville Regular'), url('./woff2/LibreBaskerville-Regular.woff2') format('woff2'), url('./woff/LibreBaskerville-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-weight: 700;
+	font-display: swap;
+	src: local('Libre Baskerville Bold'), url('./woff2/LibreBaskerville-Bold.woff2') format('woff2'), url('./woff/LibreBaskerville-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-weight: 400;
+  font-style: italic;
+	font-display: swap;
+	src: local('Libre Baskerville Italic'), url('./woff2/LibreBaskerville-Italic.woff2') format('woff2'), url('./woff/LibreBaskerville-Italic.woff') format('woff');
+}
