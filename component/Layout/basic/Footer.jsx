@@ -1,6 +1,10 @@
+import Link from "next/link";
+
 const BasicFooter = () => {
   return (
-    <footer>하단</footer>
+    <footer>
+      <Link href="/inquiry/list"><a>1:1문의하기</a></Link>
+    </footer>
   )
 }
 

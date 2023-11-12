@@ -1,10 +1,10 @@
 import { useRouter } from "next/router";
-import { PATH_ROUTE_MAP } from "../../../constants/pathList";
+import { PATH_ROUTE_MAP } from "../../constants/pathList";
 import BasicHeader from "./basic/Header";
 import GuideHeader from "./guide/Header";
 import BasicFooter from "./basic/Footer";
 import GuideFooter from "./guide/Footer";
-import HeadMeta from "../HeadMeta";
+import HeadMeta from "../HeadMeta"
 
 const Layout = ({ children }) => {
   const router = useRouter();

@@ -1,4 +1,8 @@
 .basic-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
   background-color:#fff;
   border: 1px solid #ddd;
+  text-align: center;
 }

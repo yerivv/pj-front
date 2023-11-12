@@ -1,5 +1,4 @@
 import Link from "next/link";
-import HeadMeta from "../component/HeadMeta";
 
 export default function GuideIndex() {
   return (
