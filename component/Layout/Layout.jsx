@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
   
   return(
     <>
-    <HeadMeta title={pageName} description={`${pageName.split(".")[0]}.`} />
+    <HeadMeta title={pageName + `- 대한항공 기내면세점`} description={`${pageName.split(".")[0]}.`} />
     <div className="wrap">
       {isGuidePath ? <GuideHeader pageName={pageName} /> : (isKcndPath ? <KcndHeader pageName={pageName} /> : <BasicHeader pageName={pageName} />)}
       <main className={pageType}>

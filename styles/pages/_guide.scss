@@ -1,21 +1,124 @@
 .guide-content {
   padding: 50px;
-  .ele-color {
-    display: flex;
-    h3 {
-      flex-shrink: 0;
-      width: 180px;
+  h3 {
+    margin-bottom: 50px;
+    font: {
+      size: 39px;
+      weight: 700;
     }
+  }
+  h4 {
+    font: {
+      size: 20px;
+      weight: 700;
+    }
+  }
+  .summary {
+    margin-top: 10px;
+    color: $color-gray2;
+    font: {
+      size: 12px;
+    }
+  }
+  .ele-color {
     ul {
       flex-grow: 1;
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
+      margin-top: 30px;
       li {
-        width: 15%;
-        
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+        width: 125px;
+        height: 125px;
+        @include border-radius(basic);
         background-color: beige;
+        text-align: center;
+        .small {
+          font-size: 1.2rem;
+        }
+        &.black {
+          background-color: $color-black;
+          color: $color-white;
+        }
+        &.white {
+          border: 1px solid $color-line1;
+          background-color: $color-white;
+        }
+        &.gray1 {
+          background-color: $color-gray1;
+          color: $color-white;
+        }
+        &.gray2 {
+          background-color: $color-gray2;
+          color: $color-white;
+        }
+        &.red {
+          background-color: $color-red;
+          color: $color-white;
+        }
+        &.blue {
+          background-color: $color-blue;
+          color: $color-white;
+        }
+        &.line1 {
+          background-color: $color-line1;
+        }
+        &.bg1 {
+          background-color: $color-bg1;
+        }
+        &.bg2 {
+          background-color: $color-bg2;
+        }
+        &.etc1 {
+          background-color: $color-etc1;
+          color: $color-gray2;
+        }
+        &.etc2 {
+          background-color: $color-etc2;
+          color: $color-white;
+        }
+        &.etc3 {
+          background-color: $color-etc3;
+          color: $color-gray2;
+        }
+        &.etc4 {
+          background-color: $color-etc4;
+          color: $color-gray2;
+        }
+        &.etc5 {
+          background-color: $color-etc5;
+          color: $color-white;
+        }
+        &.etc6 {
+          background-color: $color-etc6;
+          color: $color-white;
+        }
+        &.etc7 {
+          background-color: $color-etc7;
+          color: $color-white;
+        }
+        &.etc8 {
+          background-color: $color-etc8;
+          color: $color-gray2;
+        }
+        &.etc9 {
+          background-color: $color-etc9;
+          color: $color-white;
+        }
+        &.etc10 {
+          background-color: $color-etc10;
+          color: $color-gray2;
+        }
       }
+    }
+
+    +.ele-color {
+      margin-top: 50px;
     }
   }
 }

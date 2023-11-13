@@ -1,16 +1,17 @@
 .header-wrap {
   color: $color-white;
+
   .logoImage {
     background-image: url('/assets/gnb/logo-white.svg');
   }
 
   .bg {
+    position: relative;
     top: 0;
     z-index: 1005;
     width: 100%;
-    position: relative;
     height: 189px;
-    background: linear-gradient(to bottom, #000, rgba(0, 69, 56, 0.26) 103%);
+    background: linear-gradient(to bottom, $color-black, rgba(0, 69, 56, 0.26) 103%);
     transition: height 300ms ease-out;
   }
 
@@ -18,17 +19,17 @@
     position: relative;
     max-width: 1680px;
     width: 100%;
-    margin: auto;
     padding-top: 20px;
+    margin: auto;
     @include layoutTablet {
+      max-width: none;
       width: auto;
       height: 8.4rem;
       padding: 0;
-      max-width: none;
     }
     @include layoutOther {
-      padding-left: 25px;
       padding-right: 25px;
+      padding-left: 25px;
     }
   }
 
@@ -36,13 +37,12 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 2.6rem;
-
     @include layoutTablet {
       margin-bottom: 0.3rem;
       &:first-child {
-        padding: 0 1.5rem;
-        width: 100%;
         align-items: center;
+        width: 100%;
+        padding: 0 1.5rem;
       }
       &:last-child {
         &::-webkit-scrollbar {
@@ -50,7 +50,6 @@
         }
       }
     }
-
     @include mobile {
       &:first-child {
         padding-top: 1.2rem;
@@ -67,10 +66,10 @@
     align-items: center;
     width: auto;
     @include layoutTablet {
-      min-width: auto;
-      width: 100%;
       justify-content: flex-start;
       gap: 2rem;
+      min-width: auto;
+      width: 100%;
     }
     @include mobile {
       gap: 1rem;
@@ -80,7 +79,6 @@
     }
     &.innerLeftFlexEnd {
       justify-content: space-between;
-
       @include layoutTablet {
         align-items: center;
         justify-content: flex-start;
@@ -97,8 +95,8 @@
   .logoContainer {
     margin-right: 30px;
     @include mobile {
-      margin-right: 0;
       flex-shrink: 0;
+      margin-right: 0;
     }
     .logoImage {
       display: block;
@@ -107,8 +105,8 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      cursor: pointer;
       text-indent: -999em;
+      cursor: pointer;
       @include layoutTablet {
         min-width: auto;
         width: 62.7px;
@@ -139,10 +137,10 @@
       }
     }
     .menu {
-      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
+      position: relative;
       height: 8rem;
       padding: 5px;
       border-radius: 1rem;
@@ -151,7 +149,7 @@
         padding: 0;
       }
       &:hover {
-        background-color: #fff;
+        background-color: $color-white;
         @include layoutTablet {
           background-color: transparent;
         }
@@ -196,9 +194,9 @@
         background: no-repeat center / 100%;
         transform: translateY(-50%);
         @include layoutTablet {
+          top: 0;
           width: 3.4rem;
           height: 3.4rem;
-          top: 0;
           transform: translateY(0);
         }
         @include mobile {
@@ -224,10 +222,10 @@
       span {
         position: absolute;
         bottom: 5px;
+        color: $color-black;
+        font-weight: 700;
         font-size: 12px;
         line-height: 14px;
-        color: #000;
-        font-weight: 700;
         text-align: center;
         opacity: 0;
         @include mobile {
@@ -235,31 +233,30 @@
         }
       }
       .thumb {
-        display: 'block';
+        display: block;
         width: 30px;
         height: 30px;
-        background-color: $color-white;
         border-radius: 50%;
         border: 1px solid grey;
+        background-color: $color-white;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
       }
       .shopNum {
+        justify-content: center;
+        align-items: center;
         position: absolute;
         top: 20px;
         right: 5px;
         min-width: 14px;
         height: 14px;
-        font-size: 9px;
-        color: #fff;
-        text-align: center;
-        border-radius: 20px;
         padding: 0 3px;
+        border-radius: 20px;
         background-color: #e0003f;
-
-        justify-content: center;
-        align-items: center;
+        color: $color-white;
+        font-size: 9px;
+        text-align: center;
         @include layoutTablet {
           display: flex;
           top: 0px;
@@ -280,7 +277,7 @@
     font-size: 1.2rem;
     line-height: 1.6rem;
     padding-right: 9px;
-    border-right: 1px solid #fff;
+    border-right: 1px solid $color-white;
     border-color: rgba(255, 255, 255, 0.2);
     margin-top: 1rem;
     @include layoutTablet {
@@ -293,6 +290,9 @@
 
   .langSelectBox {
     position: relative;
+    @include layoutTablet {
+      display: none;
+    }
     .default-option {
       height: 30px;
       font-size: 11px;
@@ -308,42 +308,39 @@
       padding: 5px;
       border-radius: 5px;
       border: 1px solid #ccc;
-      background-color: #fff;
+      background-color: $color-white;
       transform: translateY(100%);
     }
     .option {
       font-size: 1.1rem;
-      color: #000;
+      color: $color-black;
       padding: 5px;
       cursor: pointer;
       &:hover {
         background-color: rgba(91, 166, 210, 0.1);
       }
     }
-    @include layoutTablet {
-      display: none;
-    }
   }
 
   .menuIconContainer {
     display: flex;
-    padding: 10px 0;
     justify-content: center;
     align-items: center;
+    padding: 10px 0;
     margin-right: 30px;
     transition: all 300ms;
+    @include layoutTablet {
+      display: none;
+    }
     .menu {
       width: 45px;
       height: 45px;
       background-image: url($icon-url+'gnb/header-menu-icon.svg');
       background-size:contain;
       background-position: center;
-      cursor: pointer;
       text-indent: -999em;
       filter: invert(1);
-    }
-    @include layoutTablet {
-      display: none;
+      cursor: pointer;
     }
   }
   .logoContainer2 {
@@ -351,9 +348,9 @@
   }
 
   .gnbWrapper {
+    display: flex;
     overflow: hidden;
     min-height: 48px;
-    display: flex;
     -webkit-overflow-scrolling: touch;
     .gnbMenus {
       overflow: hidden;
@@ -372,7 +369,7 @@
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          color: #FFF;
+          color: $color-white;
           font-size: 2rem !important;
           font-weight: normal;
           min-height: 60px;
@@ -386,10 +383,10 @@
     align-self: flex-start;
     display: inline-block;
     width: 8.1rem;
-    color: #fff;
+    color: $color-white;
     line-height: 4.3rem;
     text-align: center;
-    border: 1px solid #fff;
+    border: 1px solid $color-white;
     border-radius: 21.5px;
     margin-right: 1.2rem;
     margin-top: 0.3rem;
@@ -410,7 +407,7 @@
     border-radius: 100px;
     border: solid 1px #5b6768;
     transform: translateX(-10px);
-    color: #000;
+    color: $color-black;
     background-color: #f7f7f7;
     outline: 0;
     @include layoutTablet{
@@ -433,7 +430,7 @@
     }
   }
 
-  
+  //white 테마
   &.themeWhite {
     color: $color-black;
     .bg {
@@ -470,6 +467,7 @@
     }
   }
 
+  //black 테마
   &.themeBlack {
     .bg {
       background: $color-black;
@@ -556,6 +554,6 @@
     position: fixed;
     width: 100%;
     height: 165px;
-    background: #fff;
+    background: $color-white;
   }
 }
