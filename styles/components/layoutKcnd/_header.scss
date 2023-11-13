@@ -1,0 +1,561 @@
+.header-wrap {
+  color: $color-white;
+  .logoImage {
+    background-image: url('/assets/gnb/logo-white.svg');
+  }
+
+  .bg {
+    top: 0;
+    z-index: 1005;
+    width: 100%;
+    position: relative;
+    height: 189px;
+    background: linear-gradient(to bottom, #000, rgba(0, 69, 56, 0.26) 103%);
+    transition: height 300ms ease-out;
+  }
+
+  .wrapper {
+    position: relative;
+    max-width: 1680px;
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+    @include layoutTablet {
+      width: auto;
+      height: 8.4rem;
+      padding: 0;
+      max-width: none;
+    }
+    @include layoutOther {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.6rem;
+
+    @include layoutTablet {
+      margin-bottom: 0.3rem;
+      &:first-child {
+        padding: 0 1.5rem;
+        width: 100%;
+        align-items: center;
+      }
+      &:last-child {
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+
+    @include mobile {
+      &:first-child {
+        padding-top: 1.2rem;
+        margin-bottom: 0.8rem;
+      }
+    }
+    &.container2 {
+      margin-bottom: 0;
+    }
+  }
+
+  .innerLeft {
+    display: flex;
+    align-items: center;
+    width: auto;
+    @include layoutTablet {
+      min-width: auto;
+      width: 100%;
+      justify-content: flex-start;
+      gap: 2rem;
+    }
+    @include mobile {
+      gap: 1rem;
+    }
+    &.searchControl {
+      width: 100%;
+    }
+    &.innerLeftFlexEnd {
+      justify-content: space-between;
+
+      @include layoutTablet {
+        align-items: center;
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  .innerRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logoContainer {
+    margin-right: 30px;
+    @include mobile {
+      margin-right: 0;
+      flex-shrink: 0;
+    }
+    .logoImage {
+      display: block;
+      min-width: 140px;
+      height: 62.5px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      text-indent: -999em;
+      @include layoutTablet {
+        min-width: auto;
+        width: 62.7px;
+        height: 28px;
+      }
+    }
+  }
+
+  .utilMenu {
+    display: flex;
+    align-items: center;
+    li {
+      margin-right: 1rem;
+      @include layoutTablet {
+        margin-right: 0;
+        margin-left: 3px;
+      }
+      &:nth-child(-n + 4) {
+        @include layoutTablet {
+          display: none;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+        @include layoutTablet {
+          display: none;
+        }
+      }
+    }
+    .menu {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 8rem;
+      padding: 5px;
+      border-radius: 1rem;
+      @include layoutTablet {
+        height: 100%;
+        padding: 0;
+      }
+      &:hover {
+        background-color: #fff;
+        @include layoutTablet {
+          background-color: transparent;
+        }
+        i {
+          top: 0;
+          transform: translateY(0);
+          @include layoutTablet {
+            top: 0;
+            transform: translateY(0);
+          }
+          &.icon1 {
+            background-image: url($icon-url+'gnb/icon-submenu-1-black.svg');
+          }
+          &.icon2 {
+            background-image: url($icon-url+'gnb/icon-submenu-2-black.svg');
+          }
+          &.icon3 {
+            background-image: url($icon-url+'gnb/icon-submenu-3-black.svg');
+          }
+          &.icon4 {
+            background-image: url($icon-url+'gnb/icon-submenu-4-black.svg');
+          }
+          &.icon5 {
+            background-image: url($icon-url+'gnb/icon-submenu-5-black.svg');
+          }
+        }
+        span {
+          opacity: 1;
+          @include layoutTablet {
+            opacity: 0;
+          }
+        }
+        .shopNum {
+          top: 0;
+        }
+      }
+      i {
+        position: relative;
+        top: 50%;
+        width: 3rem;
+        height: 3rem;
+        background: no-repeat center / 100%;
+        transform: translateY(-50%);
+        @include layoutTablet {
+          width: 3.4rem;
+          height: 3.4rem;
+          top: 0;
+          transform: translateY(0);
+        }
+        @include mobile {
+          width: 2.4rem;
+          height: 2.4rem;
+        }
+        &.icon1 {
+          background-image: url($icon-url+'gnb/icon-submenu-1.svg');
+        }
+        &.icon2 {
+          background-image: url($icon-url+'gnb/icon-submenu-2.svg');
+        }
+        &.icon3 {
+          background-image: url($icon-url+'gnb/icon-submenu-3.svg');
+        }
+        &.icon4 {
+          background-image: url($icon-url+'gnb/icon-submenu-4.svg');
+        }
+        &.icon5 {
+          background-image: url($icon-url+'gnb/icon-submenu-5.svg');
+        }
+      }
+      span {
+        position: absolute;
+        bottom: 5px;
+        font-size: 12px;
+        line-height: 14px;
+        color: #000;
+        font-weight: 700;
+        text-align: center;
+        opacity: 0;
+        @include mobile {
+          display: none;
+        }
+      }
+      .thumb {
+        display: 'block';
+        width: 30px;
+        height: 30px;
+        background-color: $color-white;
+        border-radius: 50%;
+        border: 1px solid grey;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .shopNum {
+        position: absolute;
+        top: 20px;
+        right: 5px;
+        min-width: 14px;
+        height: 14px;
+        font-size: 9px;
+        color: #fff;
+        text-align: center;
+        border-radius: 20px;
+        padding: 0 3px;
+        background-color: #e0003f;
+
+        justify-content: center;
+        align-items: center;
+        @include layoutTablet {
+          display: flex;
+          top: 0px;
+          right: 0px;
+        }
+        @include mobile {
+          top: -1px;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  .exchangeRate {
+    display: flex;
+    align-items: center;
+    margin-left: 14px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding-right: 9px;
+    border-right: 1px solid #fff;
+    border-color: rgba(255, 255, 255, 0.2);
+    margin-top: 1rem;
+    @include layoutTablet {
+      display: none;
+    }
+    &.search {
+      min-width: 133px;
+    }
+  }
+
+  .langSelectBox {
+    position: relative;
+    .default-option {
+      height: 30px;
+      font-size: 11px;
+      padding: 5px 2rem 5px 8px;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+    .option-box {
+      /* display: none; */
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      transform: translateY(100%);
+    }
+    .option {
+      font-size: 1.1rem;
+      color: #000;
+      padding: 5px;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(91, 166, 210, 0.1);
+      }
+    }
+    @include layoutTablet {
+      display: none;
+    }
+  }
+
+  .menuIconContainer {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    transition: all 300ms;
+    .menu {
+      width: 45px;
+      height: 45px;
+      background-image: url($icon-url+'gnb/header-menu-icon.svg');
+      background-size:contain;
+      background-position: center;
+      cursor: pointer;
+      text-indent: -999em;
+      filter: invert(1);
+    }
+    @include layoutTablet {
+      display: none;
+    }
+  }
+  .logoContainer2 {
+    display: none;
+  }
+
+  .gnbWrapper {
+    overflow: hidden;
+    min-height: 48px;
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    .gnbMenus {
+      overflow: hidden;
+      margin-bottom: 0;
+      overflow-x: auto !important;
+      position: relative;
+      display: inline-block;
+      flex: 1 1 auto;
+      white-space: nowrap;
+      width: 100%;
+      ul {
+        display: flex;
+      }
+      li {
+        a {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          color: #FFF;
+          font-size: 2rem !important;
+          font-weight: normal;
+          min-height: 60px;
+          margin: 0 16px;
+        }
+      }
+    }
+  }
+
+  .MallLink {
+    align-self: flex-start;
+    display: inline-block;
+    width: 8.1rem;
+    color: #fff;
+    line-height: 4.3rem;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 21.5px;
+    margin-right: 1.2rem;
+    margin-top: 0.3rem;
+    cursor: pointer;
+    @include layoutTablet {
+      display: none;
+    }
+  }
+
+  .lineSearch {
+    position: relative;
+    width: 269px;
+    max-height: 4.3rem;
+    font-weight: 700;
+    text-align: left;
+    padding: 1rem 2rem 1rem 2.2rem;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 100px;
+    border: solid 1px #5b6768;
+    transform: translateX(-10px);
+    color: #000;
+    background-color: #f7f7f7;
+    outline: 0;
+    @include layoutTablet{
+      display: none;
+    }
+    .planImage {
+      position: absolute;
+      right: -10px;
+      top: 50%;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: solid 1px #5b6768;
+      background-color: $color-white;
+      transform: translateY(-50%);
+      cursor: pointer;
+      @include layoutTablet {
+        display: none;
+      }
+    }
+  }
+
+  
+  &.themeWhite {
+    color: $color-black;
+    .bg {
+      background: $color-white;
+    }
+    .logoImage {
+      background-image: url('/assets/gnb/logo-black.svg');
+    }
+    .utilMenu {
+      .menu {
+        i {
+          &.icon1 {
+            background-image: url($icon-url+'gnb/icon-submenu-1-black.svg');
+          }
+          &.icon2 {
+            background-image: url($icon-url+'gnb/icon-submenu-2-black.svg');
+          }
+          &.icon3 {
+            background-image: url($icon-url+'gnb/icon-submenu-3-black.svg');
+          }
+          &.icon4 {
+            background-image: url($icon-url+'gnb/icon-submenu-4-black.svg');
+          }
+          &.icon5 {
+            background-image: url($icon-url+'gnb/icon-submenu-5-black.svg');
+          }
+        }
+      }
+    }
+    .menuIconContainer {
+      .menu {
+        filter: invert(0);
+      }
+    }
+  }
+
+  &.themeBlack {
+    .bg {
+      background: $color-black;
+    }
+  }
+
+  //scroll 후 작아진 영역
+  &.small {
+    .bg {
+      position: fixed;
+      top:0px;
+      height:80px;
+      transition: background 300ms ease-out;
+      @include layoutTablet {
+        max-height: 56px;
+      }
+    }
+    .wrapper {
+      padding-top: 0;
+      @include layoutTablet {
+        padding: 0;
+      }
+    }
+    .container {
+      margin-bottom: 2.6rem;
+      @include layoutTablet {
+        padding: 0 0 0 1.5rem !important;
+      }
+      &.container2 {
+        align-items: center;
+        margin-bottom: 0;
+      }
+    }
+    .innerRight {
+      @include layoutTablet {
+        display: none;
+      }
+    }
+    .logoContainer2 {
+      display: block;
+      margin-right: 1rem;
+      .logoImage {
+        max-width: 6.27rem;
+        height: 4rem;
+      }
+    }
+    .menuIconContainer {
+      margin-right: 4rem;
+      width: 4rem;
+      height: 4rem;
+      padding: 0;
+      @include layoutTablet {
+        min-width: 6.27rem;
+        width: 6.27rem;
+        height: 2.8rem;
+        margin: 0;
+        justify-content: flex-start;
+      }
+    }
+    .gnbWrapper {
+      .gnbMenus {
+        li {
+          a {
+            min-height: 80px;
+          }
+        }
+      }
+    }
+  }
+
+  .WhiteBg {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    @include layoutTablet {
+      max-height: 56px;
+    }
+  }
+
+  .MainNullSpace {
+    position: fixed;
+    width: 100%;
+    height: 165px;
+    background: #fff;
+  }
+}

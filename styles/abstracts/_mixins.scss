@@ -23,6 +23,13 @@
   }
 }
 
+@mixin layoutOther {
+  @media (min-width: 1300px)
+    and (max-width: 1745px) {
+    @content;
+  }
+}
+
 @mixin max-width {
   max-width: $width-max;
   margin: 0 auto;

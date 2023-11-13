@@ -89,3 +89,9 @@ a:focus:not(:focus-visible) {
     height: auto !important;
   }
 }
+
+.wrap {
+  main {
+    min-height: 100vh;
+  }
+}

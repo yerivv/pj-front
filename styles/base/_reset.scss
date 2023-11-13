@@ -114,6 +114,8 @@ table {
   border-collapse: collapse;-spacing: 0;
 }
 a {
+  font: inherit;
+  color: inherit;
   text-decoration: none;
 }
 button {

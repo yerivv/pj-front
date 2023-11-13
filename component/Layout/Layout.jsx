@@ -2,26 +2,29 @@ import { useRouter } from "next/router";
 import { PATH_ROUTE_MAP } from "../../constants/pathList";
 import BasicHeader from "./basic/Header";
 import GuideHeader from "./guide/Header";
+import KcndHeader from "./kcnd/Header";
 import BasicFooter from "./basic/Footer";
 import GuideFooter from "./guide/Footer";
+import KcndFooter from "./kcnd/Footer";
 import HeadMeta from "../HeadMeta"
 
 const Layout = ({ children }) => {
   const router = useRouter();
   const pathname = router.pathname;
   const isGuidePath = pathname.includes('guide');
+  const isKcndPath = pathname.includes('kcnd');
   const pageName = PATH_ROUTE_MAP[pathname] ? PATH_ROUTE_MAP[pathname] : '페이지명';
-  const pageType = isGuidePath ? 'guide-content' : 'basic-content'
+  const pageType = isGuidePath ? 'guide-content' : (isKcndPath ? 'kcnd-content' : 'basic-content');
   
   return(
     <>
     <HeadMeta title={pageName} description={`${pageName.split(".")[0]}.`} />
     <div className="wrap">
-      {isGuidePath ? <GuideHeader pageName={pageName} /> : <BasicHeader pageName={pageName} />}
+      {isGuidePath ? <GuideHeader pageName={pageName} /> : (isKcndPath ? <KcndHeader pageName={pageName} /> : <BasicHeader pageName={pageName} />)}
       <main className={pageType}>
         {children}
       </main>
-      {isGuidePath ? <GuideFooter /> : <BasicFooter />}
+      {isGuidePath ? <GuideFooter /> : (isKcndPath ? <KcndFooter /> : <BasicFooter />)}
     </div>
     </>
   )

@@ -13,9 +13,15 @@
 
 @import 
   'components/layout/header',
+  'components/layout/footer',
   'components/merchandise'; //공통 상품
 
 @import 
   'pages/guide', //가이드
   'pages/main', //메인
   'pages/exhibition'; //전시
+
+
+// kcnd 테스트
+@import 
+  'pages/kcnd'; //테스트

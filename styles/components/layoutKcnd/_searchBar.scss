@@ -1,0 +1,97 @@
+.searchBarBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.themeWhite {
+  .searchBar {
+    input {
+      border-color: $color-black;
+    }
+  }
+}
+
+.searchBar {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  width: 365px;
+  transition: all 0.5s ease;
+  input {
+    min-width: 320px;
+    width: 100%;
+    height: 30px;
+    color: $color-white;;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid $color-white;
+    box-shadow: none;
+    ::placeholder {
+      color: #999;
+      font-size: 14px;
+    }
+    :focus {
+      outline: none;
+      width: 100%;
+      opacity: 1;
+      visibility: visible;
+    }
+    transition: width 0.5s ease, opacity 0.3s ease;
+  }
+
+  button {
+    vertical-align: bottom;
+    margin-left: 0.7rem;
+    @include layoutTablet {
+      padding: 0.5rem;
+    }
+
+    @include mobile {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-left: 0;
+      transform: translateY(-50%);
+    }
+  }
+  @include layoutTablet {
+    width: 35%;
+    margin-bottom: 0;
+
+    button {
+      position: absolute;
+      right: 48px;
+    }
+    input {
+      opacity: 0;
+      min-width: auto;
+      width: 0px;
+    }
+  }
+  @include mobile {
+    position: relative;
+    width: 100%;
+    margin-bottom: 0;
+
+    input {
+      width: 0;
+      min-width: auto;
+      padding: 0;
+      opacity: 0;
+      padding-right: 0;
+    }
+    input:focus {
+      padding-right: 33px;
+    }
+  }
+  &.searchControl {
+    width: 80%;
+    @include layoutTablet {
+      width: 35%;
+    }
+  }
+}
