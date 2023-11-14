@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="닫기" transform="translate(-5 -2)">
+    <rect id="사각형_77" data-name="사각형 77" class="cls-1" width="48" height="48" transform="translate(5 2)"/>
+    <path id="합치기_16" data-name="합치기 16" d="M0,0H36V3H0Z" transform="translate(11 24)"/>
+  </g>
+</svg>

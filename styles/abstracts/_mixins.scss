@@ -66,3 +66,18 @@
 @mixin border-radius($type) {
   border-radius: map-get($radius, $type);
 }
+
+//백그라운드 이미지 설정
+//ex @include background-style(cover, no-repeat, left, top); 모든 설정 변경
+//ex @include background-style; 이미지 url만 변경 기본 설정 사용
+@mixin background-style($size : contain, $repeat: no-repeat, $positionX: center, $positionY: center){
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $positionX $positionY;
+}
+
+//테마 컬러
+@function theme-color($key: 'primary', $variant: 'base') {
+  $map: map-get($theme-colors, $key);
+  @return map-get($map, $variant);
+}

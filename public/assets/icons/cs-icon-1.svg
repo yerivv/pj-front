@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="star" transform="translate(0 -0.189)">
+    <rect id="사각형_6501" data-name="사각형 6501" class="cls-1" width="20" height="20" transform="translate(0 0.189)"/>
+    <path id="패스_91639" data-name="패스 91639" class="cls-2" d="M32.576,37.19l3.99,2.528a.669.669,0,0,0,.992-.753L36.4,34.43a.693.693,0,0,1,.224-.7l3.578-2.978a.686.686,0,0,0-.377-1.211l-4.672-.3a.666.666,0,0,1-.573-.423l-1.743-4.388a.658.658,0,0,0-1.231,0l-1.743,4.388a.666.666,0,0,1-.573.423l-4.672.3a.686.686,0,0,0-.377,1.211l3.578,2.978a.693.693,0,0,1,.224.7L26.98,38.636a.8.8,0,0,0,1.19.9l3.708-2.349A.65.65,0,0,1,32.576,37.19Z" transform="translate(-22.101 -22.051)"/>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g data-name="타원 19" style="fill:#fff;stroke:#000;stroke-width:1.5px">
+        <circle cx="12" cy="12" r="12" style="stroke:none"/>
+        <circle cx="12" cy="12" r="11.25" style="fill:none"/>
+    </g>
+    <text transform="translate(12 17)" style="fill:#5ba6d2;font-size:14px;font-family:Pretendard-Bold,Pretendard;font-weight:700"><tspan x="-4.368" y="0">P</tspan></text>
+</svg>

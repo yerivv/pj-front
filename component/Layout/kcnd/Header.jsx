@@ -49,7 +49,7 @@ const KcndHeader = ({ pageName }) => {
 
   return (
     <>
-    <header className={`header-wrap${small ? ' small' : ''}${themeWhite ? ' themeWhite' : ''}${themeBlack ? ' themeBlack' : ''}`}>
+    <header className={`header-wrap${themeWhite ? ' themeWhite' : ''}${themeBlack ? ' themeBlack' : ''}${small ? ' small' : ''}`}>
       {small && <div className="WhiteBg"></div>}
       <div className="bg">
         <div className="wrapper">
@@ -136,8 +136,8 @@ const KcndHeader = ({ pageName }) => {
             </div>
           </div>
         )}
-          <div className="container container2">
-            <div className="innerLeft innerLeftFlexEnd">
+          <div className="container2">
+            <div className="innerLeftFlexEnd">
               <div className="menuIconContainer">
                 <span className="menu">전체메뉴</span>
               </div>

@@ -1,0 +1,18 @@
+<svg id="ic_check" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #ccc;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_6355" data-name="사각형 6355" class="cls-1" width="20" height="20"/>
+  <path id="check" class="cls-2" d="M14.965,6,7.427,13.538,4,10.112" transform="translate(0.684 0.231)"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg id="ic_arrow_left_large" data-name="ic_arrow left_large" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="그룹_9458" data-name="그룹 9458">
+    <rect id="사각형_6237" data-name="사각형 6237" class="cls-1" width="24" height="24"/>
+    <path id="패스_9" data-name="패스 9" class="cls-2" d="M1712,2955.75h14.351" transform="translate(-1707.5 -2943.738)"/>
+  </g>
+  <path id="패스_10" data-name="패스 10" class="cls-2" d="M1732.938,2983.532l6.344,6.767-6.344,6.733" transform="translate(-1719.781 -2978.281)"/>
+</svg>

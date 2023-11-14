@@ -1,0 +1,35 @@
+<svg id="ic_departflight_24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+      }
+
+      .cls-1, .cls-4 {
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_6423" data-name="Rectangle 6423" class="cls-1" width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <rect id="bg" class="cls-2" width="24" height="24"/>
+  <g id="icon" class="cls-3">
+    <path id="pictogram" class="cls-4" d="M5.66,20.007l2.191-2.019a.933.933,0,0,1,1.213,0l2.178,2.019a.919.919,0,0,0,1.317-.6l.417-1.365a1.208,1.208,0,0,0-.222-1.052l-2.139-2.346a1.234,1.234,0,0,1-.274-.725v-2.63c0-.6.4-.881.913-.654l4.369,2.047c.717.341,1.317-.085,1.317-.938V10.425a2.078,2.078,0,0,0-1.056-1.749L10.747,6.259a.766.766,0,0,1-.391-.654V2.662A3.2,3.2,0,0,0,8.921.117a.922.922,0,0,0-.9,0A3.147,3.147,0,0,0,6.586,2.662V5.605a.8.8,0,0,1-.391.654L1.056,8.676A2.107,2.107,0,0,0,0,10.425v1.322c0,.853.587,1.28,1.317.938l4.369-2.047c.5-.242.913.057.913.654v2.63a1.248,1.248,0,0,1-.274.725L4.147,16.979a1.208,1.208,0,0,0-.222,1.052L4.343,19.4A.914.914,0,0,0,5.66,20.007Z" transform="translate(16.976 -0.366) rotate(60)"/>
+  </g>
+</svg>

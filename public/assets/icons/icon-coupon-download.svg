@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="14.5" viewBox="0 0 16.5 14.5">
+    <g data-name="Icon feather-download">
+        <path data-name="패스 160" d="M17.5 12.5v3.333a1.667 1.667 0 0 1-1.667 1.667H4.167A1.667 1.667 0 0 1 2.5 15.833V12.5" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px" transform="translate(-1.75 -3.75)"/>
+        <path data-name="패스 161" d="M5.833 8.333 10 12.5l4.167-4.167" transform="translate(-1.75 -1.75)" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+        <path data-name="패스 162" d="M10 12.5v-10" transform="translate(-1.75 -1.75)" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+    </g>
+</svg>

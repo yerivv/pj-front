@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="airplane" transform="translate(0 0.568)">
+    <rect id="사각형_6506" data-name="사각형 6506" class="cls-1" width="20" height="20" transform="translate(0 -0.568)"/>
+    <path id="패스_91640" data-name="패스 91640" class="cls-2" d="M31.919,39.228l-3.046.609V38.01l1.218-1.218V33.746L24,34.964V33.137l6.091-3.046.009-4.264a1.827,1.827,0,1,1,3.655,0l.009,4.264,6.091,3.046v1.827l-6.091-1.218v3.046l1.2,1.218v1.827Z" transform="translate(-22.173 -22.233)"/>
+  </g>
+</svg>

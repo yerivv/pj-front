@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <radialGradient id="av9i52o01a" cx=".5" cy=".709" r=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#d0d0d0"/>
+            <stop offset="1" stop-color="#a7a7a7"/>
+        </radialGradient>
+        <radialGradient id="iytejjvesb" cx=".5" cy=".709" r=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ebebeb"/>
+            <stop offset="1" stop-color="#9d9d9d"/>
+        </radialGradient>
+        <linearGradient id="f9lc3365qc" x1=".29" x2=".917" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fff"/>
+            <stop offset="1" stop-color="#b7b7b7"/>
+        </linearGradient>
+    </defs>
+    <circle cx="20" cy="20" r="20" style="fill:url(#av9i52o01a)"/>
+    <circle data-name="icon" cx="20" cy="20" r="20" style="fill:url(#iytejjvesb)"/>
+    <path data-name="패스 91593" d="M26.9-13.071h-5.331L14.48-33.984h5.553z" transform="translate(-4.688 44.143)" style="fill:url(#f9lc3365qc)"/>
+    <path data-name="패스 91592" d="M14.48-13.071h5.327L26.9-33.984h-5.557z" transform="translate(3.312 44.143)" style="fill:#fff"/>
+</svg>

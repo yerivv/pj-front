@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.526" height="40" viewBox="0 0 42.526 40">
+    <defs>
+        <radialGradient id="28xaiesaha" cx=".452" cy=".5" r=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#bfe7ff"/>
+            <stop offset="1" stop-color="#5ba6d2"/>
+        </radialGradient>
+        <radialGradient id="7oi8ay7zvb" cx=".401" xlink:href="#28xaiesaha"/>
+        <clipPath id="5yvmal98oe">
+            <path data-name="패스 91740" d="M10454.444 6835.627v6.136h-6.072v14.637h15.968v-20.774z" style="fill:none;stroke:#707070"/>
+        </clipPath>
+        <clipPath id="ritp3izycf">
+            <path data-name="패스 91739" d="m10453.255 6836.181.012 16.058h-4.791v3.754h15.9v-19.812z" style="fill:none;stroke:#707070"/>
+        </clipPath>
+        <linearGradient id="1yxtpstdgd" x1=".29" x2=".917" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fff"/>
+            <stop offset="1" stop-color="#c1cee4"/>
+        </linearGradient>
+        <filter id="56om3qpyfc" x="19" y="11.237" width="23.526" height="23.526" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="THE BLUE" transform="translate(-10470 -6829)">
+        <circle data-name="타원 284" cx="20" cy="20" r="20" transform="translate(10470 6829)" style="fill:#5ba6d2"/>
+        <g transform="translate(10470 6829)" style="opacity:.5">
+            <circle cx="20" cy="20" r="20" style="fill:url(#28xaiesaha)"/>
+            <circle data-name="bg" cx="20" cy="20" r="20" style="fill:url(#7oi8ay7zvb);opacity:.5"/>
+        </g>
+        <g style="filter:url(#56om3qpyfc)">
+            <path data-name="+" d="M4.143-6.954h1.249v-2.127h2.15v-1.249h-2.15v-2.15H4.143v2.15H2.016v1.249h2.127z" transform="translate(10495.98 6858.72)" style="fill:#fff"/>
+        </g>
+        <g data-name="그룹 13372">
+            <path data-name="패스 91738" d="M26.151-13.6h-4.765l-.008-19.82h4.763z" transform="translate(10460.748 6872.974)" style="fill:url(#1yxtpstdgd)"/>
+            <g style="clip-path:url(#5yvmal98oe)" transform="translate(33.644 3.373)">
+                <g style="clip-path:url(#ritp3izycf)" data-name="마스크 그룹 98">
+                    <text transform="translate(10447 6856)" style="stroke:transparent;font-size:28px;font-family:Pretendard-ExtraBold,Pretendard;font-weight:800;fill:#fff" data-name="마스크 그룹 97"><tspan x="0" y="0">B</tspan></text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

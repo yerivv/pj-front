@@ -1,0 +1,30 @@
+<svg id="icon-order_completed-30" data-name="icon-order completed-30" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #5ba6d2;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+
+      .cls-3 {
+        stroke: #000;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_6470" data-name="사각형 6470" class="cls-1" width="30" height="30"/>
+  <path id="패스_91609" data-name="패스 91609" class="cls-2" d="M9500.958,12109.572l2.786,3.327,6.4-6.124" transform="translate(-9490.551 -12093.837)"/>
+  <g id="bag">
+    <rect id="사각형_6550" data-name="사각형 6550" class="cls-1" width="30" height="30"/>
+    <rect id="사각형_6551" data-name="사각형 6551" class="cls-3" width="20.625" height="16.875" rx="5" transform="translate(4.688 7.5)"/>
+    <path id="패스_91669" data-name="패스 91669" class="cls-3" d="M88,28.687a4.688,4.688,0,0,1,9.375,0" transform="translate(-77.688 -21.187)"/>
+  </g>
+</svg>

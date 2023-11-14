@@ -1,0 +1,36 @@
+<svg id="user-circle-gear-light" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #000;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+
+      .cls-3 {
+        stroke: #5ba6d2;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_6630" data-name="사각형 6630" class="cls-1" width="48" height="48"/>
+  <circle id="타원_262" data-name="타원 262" class="cls-2" cx="7.5" cy="7.5" r="7.5" transform="translate(16.5 15)"/>
+  <path id="패스_91691" data-name="패스 91691" class="cls-2" d="M63.8,167.383a13.505,13.505,0,0,1,24.075,0" transform="translate(-51.837 -130)"/>
+  <path id="패스_91692" data-name="패스 91692" class="cls-2" d="M67.91,47A17.981,17.981,0,1,1,53.159,32.245" transform="translate(-26.159 -25.996)"/>
+  <g id="setting">
+    <circle id="타원_263" data-name="타원 263" class="cls-3" cx="3" cy="3" r="3" transform="translate(34.5 7.5)"/>
+    <line id="선_212" data-name="선 212" class="cls-3" y1="2.25" transform="translate(37.5 5.25)"/>
+    <line id="선_213" data-name="선 213" class="cls-3" x1="1.949" y1="1.125" transform="translate(32.953 7.875)"/>
+    <line id="선_214" data-name="선 214" class="cls-3" x1="1.949" y2="1.125" transform="translate(32.953 12)"/>
+    <line id="선_215" data-name="선 215" class="cls-3" y2="2.25" transform="translate(37.5 13.5)"/>
+    <line id="선_216" data-name="선 216" class="cls-3" x2="1.949" y2="1.125" transform="translate(40.098 12)"/>
+    <line id="선_217" data-name="선 217" class="cls-3" y1="1.125" x2="1.949" transform="translate(40.098 7.875)"/>
+  </g>
+</svg>

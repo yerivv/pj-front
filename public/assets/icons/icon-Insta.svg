@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84" height="84" viewBox="0 0 84 84">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        filter: url(#Oval);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.503" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7024c4"/>
+      <stop offset="0.415" stop-color="#c21975"/>
+      <stop offset="0.702" stop-color="#c74c4d"/>
+      <stop offset="1" stop-color="#e09b3d"/>
+    </linearGradient>
+    <filter id="Oval" x="0" y="0" width="84" height="84" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Instagram" transform="translate(12 8)">
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, -12, -8)">
+      <circle id="Oval-2" data-name="Oval" class="cls-1" cx="30" cy="30" r="30" transform="translate(12 8)"/>
+    </g>
+    <path id="Instagram-2" data-name="Instagram" class="cls-2" d="M21.171,30.154H8.983A8.993,8.993,0,0,1,0,21.171V8.983A8.993,8.993,0,0,1,8.983,0H21.171a8.993,8.993,0,0,1,8.983,8.983V21.171A8.993,8.993,0,0,1,21.171,30.154ZM8.983,3.033a5.956,5.956,0,0,0-5.95,5.95V21.171a5.956,5.956,0,0,0,5.95,5.949H21.171a5.956,5.956,0,0,0,5.949-5.949V8.983a5.956,5.956,0,0,0-5.949-5.95Zm6.094,19.842a7.8,7.8,0,1,1,7.8-7.8A7.808,7.808,0,0,1,15.077,22.875Zm0-12.563a4.765,4.765,0,1,0,4.765,4.765A4.771,4.771,0,0,0,15.077,10.312ZM22.89,9.206A1.869,1.869,0,1,1,24.76,7.337,1.871,1.871,0,0,1,22.89,9.206Z" transform="translate(14.924 14.924)"/>
+  </g>
+</svg>

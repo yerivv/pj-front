@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <g data-name="bt+">
+        <g data-name="Rectangle 46" style="fill:#fff;stroke:#ccc">
+            <path style="stroke:none" d="M0 0h32v32H0z"/>
+            <path style="fill:none" d="M.5.5h31v31H.5z"/>
+        </g>
+        <path data-name="Rectangle 47" d="M8 16h17v1H8z"/>
+        <path data-name="Rectangle 48" d="M16 8h1v16h-1z"/>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg id="clock-thin" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_6632" data-name="사각형 6632" class="cls-1" width="30" height="30"/>
+  <circle id="타원_282" data-name="타원 282" class="cls-2" cx="11.25" cy="11.25" r="11.25" transform="translate(3.75 3.75)"/>
+  <path id="패스_91701" data-name="패스 91701" class="cls-2" d="M128,72v6.563h6.563" transform="translate(-113 -63.563)"/>
+</svg>

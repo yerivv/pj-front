@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="newspaper-clipping" transform="translate(0 -0.183)">
+    <rect id="사각형_6511" data-name="사각형 6511" class="cls-1" width="20" height="20" transform="translate(0 0.183)"/>
+    <path id="패스_91642" data-name="패스 91642" class="cls-2" d="M32,61.245V48.631A.631.631,0,0,1,32.631,48H46.506a.631.631,0,0,1,.631.631V61.245l-2.523-1.261-2.523,1.261-2.523-1.261-2.523,1.261-2.523-1.261Z" transform="translate(-29.477 -44.216)"/>
+    <line id="선_187" data-name="선 187" class="cls-2" x2="4" transform="translate(11 9.183)"/>
+    <line id="선_188" data-name="선 188" class="cls-2" x2="4" transform="translate(11 11.183)"/>
+    <rect id="사각형_6512" data-name="사각형 6512" class="cls-2" width="4" height="6" transform="translate(5 7.183)"/>
+  </g>
+</svg>

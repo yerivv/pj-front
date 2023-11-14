@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <path style="fill:none" d="M0 0h24v24H0z"/>
+    <g data-name="사각형 1238" transform="translate(0 2)" style="fill:#fff;stroke:#000;stroke-width:1.5px">
+        <rect width="24" height="20" rx="3" style="stroke:none"/>
+        <rect x=".75" y=".75" width="22.5" height="18.5" rx="2.25" style="fill:none"/>
+    </g>
+    <text data-name="%" transform="translate(12 17)" style="fill:#5ba6d2;font-size:14px;font-family:Pretendard-Black,Pretendard;font-weight:800"><tspan x="-6.02" y="0">%</tspan></text>
+</svg>

@@ -1,0 +1,19 @@
+html {
+  --color-base: #{$default-base};
+  --color-point: #{$default-point};
+  --color-base-rgb : #{$default-baseRgb};
+  --color-point-rgb : #{$default-pointRgb};
+  --logo-white: #{$default-logo};
+  --logo-black: #{$default-logo-black};
+  --img-plane: #{$default-plane};
+}
+  
+html[data-theme="jin"] {
+  --color-base: #{$jin-base};
+  --color-point: #{$jin-point};
+  --color-base-rgb : #{$jin-baseRgb};
+  --color-point-rgb : #{$jin-pointRgb};
+  --logo-white: #{$jin-logo};
+  --logo-black: #{$jin-logo-black};
+  --img-plane: #{$jin-plane};
+}

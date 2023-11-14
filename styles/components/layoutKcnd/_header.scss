@@ -1,17 +1,10 @@
 .header-wrap {
-  color: $color-white;
-
-  .logoImage {
-    background-image: url('/assets/gnb/logo-white.svg');
-  }
-
   .bg {
     position: relative;
     top: 0;
     z-index: 1005;
     width: 100%;
     height: 189px;
-    background: linear-gradient(to bottom, $color-black, rgba(0, 69, 56, 0.26) 103%);
     transition: height 300ms ease-out;
   }
 
@@ -56,9 +49,10 @@
         margin-bottom: 0.8rem;
       }
     }
-    &.container2 {
-      margin-bottom: 0;
-    }
+  }
+  .container2 {
+    @extend .container;
+    margin-bottom: 0;
   }
 
   .innerLeft {
@@ -77,12 +71,13 @@
     &.searchControl {
       width: 100%;
     }
-    &.innerLeftFlexEnd {
-      justify-content: space-between;
-      @include layoutTablet {
-        align-items: center;
-        justify-content: flex-start;
-      }
+  }
+  .innerLeftFlexEnd {
+    @extend .innerLeft;
+    justify-content: space-between;
+    @include layoutTablet {
+      align-items: center;
+      justify-content: flex-start;
     }
   }
 
@@ -102,9 +97,7 @@
       display: block;
       min-width: 140px;
       height: 62.5px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
+      @include background-style;
       text-indent: -999em;
       cursor: pointer;
       @include layoutTablet {
@@ -160,21 +153,6 @@
             top: 0;
             transform: translateY(0);
           }
-          &.icon1 {
-            background-image: url($icon-url+'gnb/icon-submenu-1-black.svg');
-          }
-          &.icon2 {
-            background-image: url($icon-url+'gnb/icon-submenu-2-black.svg');
-          }
-          &.icon3 {
-            background-image: url($icon-url+'gnb/icon-submenu-3-black.svg');
-          }
-          &.icon4 {
-            background-image: url($icon-url+'gnb/icon-submenu-4-black.svg');
-          }
-          &.icon5 {
-            background-image: url($icon-url+'gnb/icon-submenu-5-black.svg');
-          }
         }
         span {
           opacity: 1;
@@ -191,7 +169,7 @@
         top: 50%;
         width: 3rem;
         height: 3rem;
-        background: no-repeat center / 100%;
+        @include background-style(contain, no-repeat, center, 100%);
         transform: translateY(-50%);
         @include layoutTablet {
           top: 0;
@@ -202,21 +180,6 @@
         @include mobile {
           width: 2.4rem;
           height: 2.4rem;
-        }
-        &.icon1 {
-          background-image: url($icon-url+'gnb/icon-submenu-1.svg');
-        }
-        &.icon2 {
-          background-image: url($icon-url+'gnb/icon-submenu-2.svg');
-        }
-        &.icon3 {
-          background-image: url($icon-url+'gnb/icon-submenu-3.svg');
-        }
-        &.icon4 {
-          background-image: url($icon-url+'gnb/icon-submenu-4.svg');
-        }
-        &.icon5 {
-          background-image: url($icon-url+'gnb/icon-submenu-5.svg');
         }
       }
       span {
@@ -239,9 +202,7 @@
         border-radius: 50%;
         border: 1px solid grey;
         background-color: $color-white;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        @include background-style(cover);
       }
       .shopNum {
         justify-content: center;
@@ -336,8 +297,7 @@
       width: 45px;
       height: 45px;
       background-image: url($icon-url+'gnb/header-menu-icon.svg');
-      background-size:contain;
-      background-position: center;
+      @include background-style;
       text-indent: -999em;
       filter: invert(1);
       cursor: pointer;
@@ -369,7 +329,6 @@
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          color: $color-white;
           font-size: 2rem !important;
           font-weight: normal;
           min-height: 60px;
@@ -422,6 +381,8 @@
       border-radius: 50%;
       border: solid 1px #5b6768;
       background-color: $color-white;
+      background-image: var(--img-plane);
+      @include background-style;
       transform: translateY(-50%);
       cursor: pointer;
       @include layoutTablet {
@@ -430,32 +391,51 @@
     }
   }
 
+  //기본
+  color: $color-white;
+  .bg {
+    background: linear-gradient(to bottom, $color-black, rgba(0, 69, 56, 0.26) 103%);
+  }
+  .logoImage {
+    background-image: var(--logo-white);
+  }
+  .utilMenu {
+    .menu {
+      i {
+        @for $i from 1 through 5 {
+          &.icon#{$i} {
+            background-image: url($icon-url+'gnb/icon-submenu-'+$i+'.svg');
+          }
+        }
+      }
+      &:hover i {
+        @for $i from 1 through 5 {
+          &.icon#{$i} {
+            background-image: url($icon-url+'gnb/icon-submenu-'+$i+'-black.svg');
+          }
+        }
+      }
+    } 
+  }
+
   //white 테마
   &.themeWhite {
     color: $color-black;
     .bg {
+      opacity: 1;
       background: $color-white;
+      border-bottom: 1px solid #ddd;
     }
     .logoImage {
-      background-image: url('/assets/gnb/logo-black.svg');
+      background-image: var(--logo-black);
     }
     .utilMenu {
       .menu {
         i {
-          &.icon1 {
-            background-image: url($icon-url+'gnb/icon-submenu-1-black.svg');
-          }
-          &.icon2 {
-            background-image: url($icon-url+'gnb/icon-submenu-2-black.svg');
-          }
-          &.icon3 {
-            background-image: url($icon-url+'gnb/icon-submenu-3-black.svg');
-          }
-          &.icon4 {
-            background-image: url($icon-url+'gnb/icon-submenu-4-black.svg');
-          }
-          &.icon5 {
-            background-image: url($icon-url+'gnb/icon-submenu-5-black.svg');
+          @for $i from 1 through 5 {
+            &.icon#{$i} {
+              background-image: url($icon-url+'gnb/icon-submenu-'+$i+'-black.svg');
+            }
           }
         }
       }
@@ -465,12 +445,17 @@
         filter: invert(0);
       }
     }
+    .MallLink {
+      color: $color-black;
+      border-color: #5b6768;
+    }
   }
 
   //black 테마
   &.themeBlack {
     .bg {
-      background: $color-black;
+      opacity: 1;
+      background: var(--color-base);
     }
   }
 
@@ -496,11 +481,13 @@
       @include layoutTablet {
         padding: 0 0 0 1.5rem !important;
       }
-      &.container2 {
-        align-items: center;
-        margin-bottom: 0;
-      }
     }
+    .container2 {
+      @extend .container;
+      align-items: center;
+      margin-bottom: 0;
+    }
+    
     .innerRight {
       @include layoutTablet {
         display: none;

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g transform="translate(-.135 -.135)">
+        <path data-name="Rectangle 6505" transform="translate(.135 .135)" style="fill:none" d="M0 0h24v24H0z"/>
+        <rect data-name="Rectangle 6506" width="16" height="16" rx="2" transform="translate(4.135 4.135)" style="stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none"/>
+        <path data-name="Line 184" transform="translate(17.135 2.135)" style="stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none" d="M0 0v3"/>
+        <path data-name="Line 185" transform="translate(7.135 2.135)" style="stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none" d="M0 0v3"/>
+        <path data-name="Line 186" transform="translate(4.135 8.135)" style="stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none" d="M0 0h16"/>
+    </g>
+</svg>

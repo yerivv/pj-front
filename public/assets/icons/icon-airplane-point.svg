@@ -1,0 +1,29 @@
+<svg id="icon-airline_point-30" data-name="icon-airline point-30" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+
+      .cls-3 {
+        fill: #5ba6d2;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_6468" data-name="사각형 6468" class="cls-1" width="30" height="30"/>
+  <path id="패스_91605" data-name="패스 91605" class="cls-2" d="M39.527,28.94l-8.091-4.049-.011-5.47a3.425,3.425,0,1,0-6.85,0l-.011,5.471L16.473,28.94a.857.857,0,0,0-.473.767v2.571a.857.857,0,0,0,1.024.84l7.539-1.509v2.885L23.1,35.957a.858.858,0,0,0-.251.606v2.571a.857.857,0,0,0,1.024.84l4.113-.824,4.113.824a.857.857,0,0,0,1.024-.84V36.563a.858.858,0,0,0-.246-.6L31.437,34.5V31.609l7.539,1.509A.857.857,0,0,0,40,32.278V29.707a.857.857,0,0,0-.473-.767Z" transform="translate(-13 -12.992)"/>
+  <g id="point" transform="translate(-1660 -1303)">
+    <circle id="타원_224" data-name="타원 224" class="cls-3" cx="6.5" cy="6.5" r="6.5" transform="translate(1676 1319)"/>
+    <path id="패스_91604" data-name="패스 91604" class="cls-4" d="M.84-1.859H2.5V-4.475H3.957A2.627,2.627,0,0,0,6.869-7.182,2.631,2.631,0,0,0,3.98-9.912H.84ZM2.5-5.817V-8.524H3.684A1.258,1.258,0,0,1,5.14-7.182,1.288,1.288,0,0,1,3.684-5.817Z" transform="translate(1679.093 1331.421)"/>
+  </g>
+</svg>

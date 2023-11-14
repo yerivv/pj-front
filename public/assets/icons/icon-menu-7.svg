@@ -1,0 +1,32 @@
+<svg id="초콜릿" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #b1826e;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #1d1d1b;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_6719" data-name="사각형 6719" class="cls-1" width="40" height="40"/>
+  <g id="그룹_11688" data-name="그룹 11688" transform="translate(-2429.893 -78.646)">
+    <rect id="사각형_6711" data-name="사각형 6711" class="cls-2" width="16.321" height="14.371" transform="translate(2441.731 84.13)"/>
+    <rect id="사각형_6712" data-name="사각형 6712" class="cls-3" width="19.574" height="14.661" transform="translate(2440.105 98.501)"/>
+    <g id="그룹_11686" data-name="그룹 11686">
+      <path id="패스_91752" data-name="패스 91752" class="cls-3" d="M2444.777,91.237V87.2h4.041"/>
+      <path id="패스_91753" data-name="패스 91753" class="cls-3" d="M2450.924,91.237V87.2h4.041"/>
+    </g>
+    <g id="그룹_11687" data-name="그룹 11687">
+      <path id="패스_91754" data-name="패스 91754" class="cls-3" d="M2444.777,96.889V92.848h4.041"/>
+      <path id="패스_91755" data-name="패스 91755" class="cls-3" d="M2450.924,96.889V92.848h4.041"/>
+    </g>
+  </g>
+</svg>

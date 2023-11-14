@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 130 130">
+    <defs>
+        <clipPath id="x9h68i0apa">
+            <path data-name="사각형 6697" transform="translate(944 801.5)" style="fill:#fff;stroke:#707070" d="M0 0h32v80H0z"/>
+        </clipPath>
+    </defs>
+    <g style="opacity:.16">
+        <path style="fill:none" d="M0 0h130v130H0z"/>
+        <g data-name="그룹 11643">
+            <g transform="translate(5 5)" style="stroke:#000;stroke-width:6px;fill:none">
+                <circle cx="60" cy="60" r="60" style="stroke:none"/>
+                <circle cx="60" cy="60" r="57" style="fill:none"/>
+            </g>
+            <g data-name="마스크 그룹 103" transform="translate(-895 -776.5)" style="clip-path:url(#x9h68i0apa)">
+                <text data-name="!" transform="translate(944 880.5)" style="font-size:99px;font-family:SegoeUI-Bold,Segoe UI;font-weight:700"><tspan x="0" y="0">!</tspan></text>
+            </g>
+        </g>
+    </g>
+</svg>

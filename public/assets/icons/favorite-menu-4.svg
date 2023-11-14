@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.5" height="35.5" viewBox="0 0 33.5 35.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+
+      .cls-2 {
+        fill: #5ba6d2;
+        stroke: #5ba6d2;
+      }
+    </style>
+  </defs>
+  <g id="calender" transform="translate(-1782.25 -2025.25)">
+    <g id="calender-2" data-name="calender" transform="translate(1782.673 2025.789)">
+      <rect id="사각형_6633" data-name="사각형 6633" class="cls-1" width="32" height="32" rx="1" transform="translate(0.327 2.21)"/>
+      <line id="선_225" data-name="선 225" class="cls-1" y2="5" transform="translate(25.327 0.21)"/>
+      <line id="선_226" data-name="선 226" class="cls-1" y2="5" transform="translate(7.327 0.21)"/>
+      <line id="선_227" data-name="선 227" class="cls-1" x2="32" transform="translate(0.327 10.21)"/>
+    </g>
+    <path id="star" class="cls-2" d="M7,0,9.1,4.7l4.9.648L10.4,8.9l.928,5.1L7,11.5,2.674,14,3.6,8.9,0,5.348,4.9,4.7Z" transform="translate(1792 2040)"/>
+  </g>
+</svg>

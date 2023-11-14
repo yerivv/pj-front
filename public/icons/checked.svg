@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="icon-check-active" transform="translate(-14 -14)">
+    <rect id="사각형_6355" data-name="사각형 6355" width="20" height="20" rx="5" transform="translate(14 14)"/>
+    <path id="check" class="cls-1" d="M14.965,6,7.427,13.538,4,10.112" transform="translate(14.684 14.23)"/>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg data-name="icon-mileage point-24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <path data-name="사각형 6465" style="fill:none" d="M0 0h24v24H0z"/>
+    <path data-name="사각형 6549" style="fill:none" d="M0 0h24v24H0z"/>
+    <ellipse data-name="타원 257" cx="9" cy="4.5" rx="9" ry="4.5" transform="translate(2.75 3)" style="stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none"/>
+    <path data-name="패스 91667" d="M40 80v4.5c0 2.485 4.029 4.5 9 4.5s9-2.015 9-4.5V80" transform="translate(-37.25 -72.5)" style="stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none"/>
+    <path data-name="패스 91677" d="M40 80v4.5c0 2.485 4.029 4.5 9 4.5s9-2.015 9-4.5V80" transform="translate(-37.25 -69)" style="stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none"/>
+    <g transform="translate(12.8 12.8)">
+        <circle data-name="타원 224" cx="5.2" cy="5.2" r="5.2" style="fill:#bed600"/>
+        <path data-name="패스 91604" d="M.84-3.469h1.329v-2.093h1.164a2.1 2.1 0 0 0 2.33-2.166 2.1 2.1 0 0 0-2.311-2.184H.84zm1.329-3.167V-8.8h.946A1.006 1.006 0 0 1 4.28-7.728a1.031 1.031 0 0 1-1.165 1.092z" transform="translate(2.306 11.919)" style="fill:#fff"/>
+    </g>
+</svg>

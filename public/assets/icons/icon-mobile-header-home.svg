@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31.997" height="31.997" viewBox="0 0 31.997 31.997">
+    <path data-name="패스 91721" d="M-1594.125 27.534h32v32h-32z" style="fill:none" transform="translate(1594.125 -27.534)"/>
+    <g data-name="그룹 11519">
+        <path data-name="패스 91723" d="m-1579.219 33.853-6.553 6.321V51.23h3.056v-8.217h7.176v8.221h3.062V40.178l-6.576-6.345" transform="translate(1595.124 -26.536)" style="fill:none"/>
+    </g>
+    <g data-name="합치기 30" style="fill:none">
+        <path d="M15.745 26v-9.051h-4.5V26H3.371V13.563H0L13.5 0 27 13.563h-3.375V26z" style="stroke:none" transform="translate(3 2.499)"/>
+        <path d="M22.125 24.498V12.063h1.264l-9.89-9.938-9.89 9.938H4.87v12.435h4.872v-9.05h7.502v9.05h4.88m1.5 1.5h-7.88v-9.05h-4.502v9.05H3.37V13.563H0L13.498-.002l13.5 13.565h-3.373v12.435z" style="fill:#000;stroke:none" transform="translate(3 2.499)"/>
+    </g>
+</svg>

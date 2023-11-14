@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <path data-name="사각형 6633" d="M1 0h26a1 1 0 0 1 1 1v6h0H0h0V1a1 1 0 0 1 1-1z" transform="translate(6 6)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#000;stroke-width:2px"/>
+    <path data-name="선 225" transform="translate(28.875 5)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#000;stroke-width:2px" d="M0 0v4"/>
+    <path data-name="선 226" transform="translate(11 5)" style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#000;stroke-width:2px" d="M0 0v4"/>
+    <path d="M20.46 33H6a1 1 0 0 1-1-1V14a1 1 0 0 1 1-1h28a1 1 0 0 1 1 1v7.336A10 10 0 0 0 30 20a10.011 10.011 0 0 0-10 10 9.984 9.984 0 0 0 .459 3z"/>
+    <path d="m6 0 1.8 4.028 4.2.555-3.088 3.045L9.708 12 6 9.853 2.292 12l.8-4.372L0 4.584l4.2-.555z" transform="translate(14 17)" style="stroke:#fff;stroke-width:1.5px;stroke-linecap:round;stroke-linejoin:round;fill:#fff"/>
+    <g transform="translate(22 22)">
+        <circle data-name="타원 224" cx="8" cy="8" r="8"/>
+        <path data-name="패스 91604" d="M.84 0h2.044v-3.22h1.792c2.268 0 3.584-1.372 3.584-3.332a3.238 3.238 0 0 0-3.56-3.36H.84zm2.044-4.872V-8.2H4.34a1.548 1.548 0 0 1 1.792 1.648 1.586 1.586 0 0 1-1.792 1.68z" transform="translate(4 13)" style="fill:#fff"/>
+    </g>
+</svg>

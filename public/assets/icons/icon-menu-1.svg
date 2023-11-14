@@ -1,0 +1,36 @@
+<svg id="주류" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke: #1d1d1b;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+
+      .cls-3 {
+        fill: #f7a495;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_6713" data-name="사각형 6713" class="cls-1" width="40" height="40"/>
+  <g id="그룹_11678" data-name="그룹 11678" transform="translate(-2085.805 -78.48)">
+    <g id="그룹_11676" data-name="그룹 11676">
+      <path id="패스_91736" data-name="패스 91736" class="cls-2" d="M2116.152,87.9h-6.759l-.8,6.323h8.35Z"/>
+      <path id="패스_91737" data-name="패스 91737" class="cls-3" d="M2108.6,94.22l-.65,5.917a4.631,4.631,0,0,0,4.825,4.647h0a4.631,4.631,0,0,0,4.825-4.647l-.65-5.917Z"/>
+      <line id="선_219" data-name="선 219" class="cls-4" y2="8.138" transform="translate(2112.772 104.784)"/>
+      <line id="선_220" data-name="선 220" class="cls-4" x2="9.66" transform="translate(2107.942 112.922)"/>
+    </g>
+    <g id="그룹_11677" data-name="그룹 11677">
+      <path id="패스_91738" data-name="패스 91738" class="cls-2" d="M2102.416,92.1l-.981-1.915V83.481h-3.963v6.707l-.98,1.915a11.575,11.575,0,0,0-1.688,6v12.6a2.218,2.218,0,0,0,2.217,2.217h4.865a2.217,2.217,0,0,0,2.217-2.217V98.1A11.574,11.574,0,0,0,2102.416,92.1Z"/>
+      <rect id="사각형_6704" data-name="사각형 6704" class="cls-3" width="9.299" height="9.543" transform="translate(2094.804 98.103)"/>
+    </g>
+  </g>
+</svg>

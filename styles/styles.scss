@@ -2,9 +2,11 @@
 
 @import
   'abstracts/variables',
-  'abstracts/mixins';
+  'abstracts/mixins',
+  'abstracts/theme';
 
 @import 
+  'base/theme',
   'base/reset',
   'base/common';
 

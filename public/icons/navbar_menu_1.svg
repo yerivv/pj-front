@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="menu" transform="translate(1706.243 -52.575)">
+    <g id="그룹_11525" data-name="그룹 11525">
+      <rect id="사각형_6670" data-name="사각형 6670" width="22.881" height="1.706" transform="translate(-1702.683 73.237)"/>
+      <rect id="사각형_6671" data-name="사각형 6671" width="22.881" height="1.705" transform="translate(-1702.683 66.722)"/>
+      <rect id="사각형_6672" data-name="사각형 6672" width="22.881" height="1.706" transform="translate(-1702.683 60.207)"/>
+    </g>
+    <path id="패스_91721" data-name="패스 91721" class="cls-1" d="M-1706.243,52.575h30v30h-30Z"/>
+  </g>
+</svg>

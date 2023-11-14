@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="8lnlcxelha">
+            <path data-name="Rectangle 6423" style="stroke-width:2px;fill:#fff;stroke:#707070" d="M0 0h24v24H0z"/>
+        </clipPath>
+    </defs>
+    <path style="fill:none" d="M0 0h24v24H0z"/>
+    <g style="clip-path:url(#8lnlcxelha)">
+        <path d="m5.66 20.007 2.191-2.019a.933.933 0 0 1 1.213 0l2.178 2.019a.919.919 0 0 0 1.317-.6l.417-1.365a1.208 1.208 0 0 0-.222-1.052l-2.139-2.346a1.234 1.234 0 0 1-.274-.725v-2.63c0-.6.4-.881.913-.654l4.369 2.047c.717.341 1.317-.085 1.317-.938v-1.319a2.078 2.078 0 0 0-1.056-1.749l-5.137-2.417a.766.766 0 0 1-.391-.654V2.662A3.2 3.2 0 0 0 8.921.117a.922.922 0 0 0-.9 0 3.147 3.147 0 0 0-1.435 2.545v2.943a.8.8 0 0 1-.391.654L1.056 8.676A2.107 2.107 0 0 0 0 10.425v1.322c0 .853.587 1.28 1.317.938l4.369-2.047c.5-.242.913.057.913.654v2.63a1.248 1.248 0 0 1-.274.725l-2.178 2.332a1.208 1.208 0 0 0-.222 1.052l.418 1.369a.914.914 0 0 0 1.317.607z" transform="rotate(120 9.925 12.192)" style="stroke:#000;stroke-linecap:round;stroke-linejoin:round;fill:none;stroke-width:2px"/>
+    </g>
+</svg>

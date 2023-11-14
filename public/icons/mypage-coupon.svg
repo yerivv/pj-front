@@ -1,0 +1,27 @@
+<svg id="icon-coupon-30" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255,0,0,0.2);
+        opacity: 0;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <rect id="bg" class="cls-1" width="30" height="30"/>
+  <g id="ticket">
+    <rect id="사각형_6552" data-name="사각형 6552" class="cls-2" width="30" height="30"/>
+    <line id="선_190" data-name="선 190" class="cls-3" y2="16.875" transform="translate(11.25 6.563)"/>
+    <path id="패스_91670" data-name="패스 91670" class="cls-3" d="M24,69.03a.936.936,0,0,1,.75-.918,3.751,3.751,0,0,0,0-7.35.936.936,0,0,1-.75-.918V56.938A.937.937,0,0,1,24.937,56h22.5a.938.938,0,0,1,.938.938v2.907a.936.936,0,0,1-.75.918,3.751,3.751,0,0,0,0,7.35.936.936,0,0,1,.75.918v2.907a.938.938,0,0,1-.937.938h-22.5A.937.937,0,0,1,24,71.938Z" transform="translate(-21.187 -49.438)"/>
+  </g>
+</svg>

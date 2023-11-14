@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.5" height="35.5" viewBox="0 0 33.5 35.5">
+    <g data-name="calender" transform="translate(.423 .539)">
+        <rect data-name="사각형 6633" width="32" height="32" rx="1" transform="translate(.327 2.21)" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none;stroke:#000"/>
+        <path data-name="선 225" transform="translate(25.327 .21)" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none;stroke:#000" d="M0 0v5"/>
+        <path data-name="선 226" transform="translate(7.327 .21)" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none;stroke:#000" d="M0 0v5"/>
+        <path data-name="선 227" transform="translate(.327 10.21)" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none;stroke:#000" d="M0 0h32"/>
+    </g>
+    <path d="m7 0 2.1 4.7 4.9.648L10.4 8.9l.928 5.1L7 11.5 2.674 14 3.6 8.9 0 5.348 4.9 4.7z" transform="translate(9.75 14.75)" style="fill:#bed600;stroke:#bed600;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+</svg>

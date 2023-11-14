@@ -1,0 +1,21 @@
+<svg id="icon-cart" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_6453" data-name="Rectangle 6453" class="cls-1" width="40" height="40"/>
+  <path id="Path_91576" data-name="Path 91576" class="cls-2" d="M40.125,49h-19.3a1.25,1.25,0,0,1-1.23-1.026L15.425,25.026A1.25,1.25,0,0,0,14.2,24H12" transform="translate(-10.125 -19.25)"/>
+  <circle id="Ellipse_219" data-name="Ellipse 219" class="cls-2" cx="3.125" cy="3.125" r="3.125" transform="translate(8.125 29.75)"/>
+  <circle id="Ellipse_220" data-name="Ellipse 220" class="cls-2" cx="3.125" cy="3.125" r="3.125" transform="translate(26.875 29.75)"/>
+  <path id="Path_91577" data-name="Path 91577" class="cls-2" d="M40,64H67.252a1.25,1.25,0,0,1,1.23,1.474l-2.045,11.25a1.25,1.25,0,0,1-1.23,1.026H42.5" transform="translate(-33.75 -53)"/>
+</svg>

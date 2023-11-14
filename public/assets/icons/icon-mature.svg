@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140">
+    <g data-name="타원 203" style="stroke:#e1251b;stroke-width:10px;fill:none">
+        <circle cx="70" cy="70" r="70" style="stroke:none"/>
+        <circle cx="70" cy="70" r="65" style="fill:none"/>
+    </g>
+    <text data-name="19 Adult only" transform="translate(70 83)" style="font-size:52px;font-family:Pretendard-Bold,Pretendard;font-weight:700"><tspan x="-28.86" y="0">19</tspan><tspan style="font-size:10px"><tspan x="-23.85" y="21">Adult only</tspan></tspan></text>
+</svg>

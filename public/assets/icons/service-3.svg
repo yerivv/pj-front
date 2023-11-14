@@ -1,0 +1,18 @@
+<svg id="ticket" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_6629" data-name="사각형 6629" class="cls-1" width="24" height="24"/>
+  <line id="선_216" data-name="선 216" class="cls-2" y2="13.5" transform="translate(9 5.25)"/>
+  <path id="패스_91698" data-name="패스 91698" class="cls-2" d="M24,67.592a.833.833,0,0,1,.667-.816,3.337,3.337,0,0,0,0-6.539A.833.833,0,0,1,24,59.421V56.834A.834.834,0,0,1,24.834,56H44.851a.834.834,0,0,1,.834.834v2.587a.833.833,0,0,1-.667.816,3.337,3.337,0,0,0,0,6.539.833.833,0,0,1,.667.816v2.587a.834.834,0,0,1-.834.834H24.834A.834.834,0,0,1,24,70.179Z" transform="translate(-22.843 -51.507)"/>
+</svg>

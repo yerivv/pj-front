@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+    <g transform="translate(-345 -714)">
+        <rect width="50" height="50" rx="20" transform="translate(345 714)" style="fill:#f4f4f4"/>
+        <rect data-name="area" width="4" height="4" rx="2" transform="translate(368 737)"/>
+        <rect data-name="area" width="4" height="4" rx="2" transform="translate(360 737)"/>
+        <rect data-name="area" width="4" height="4" rx="2" transform="translate(376 737)"/>
+    </g>
+</svg>

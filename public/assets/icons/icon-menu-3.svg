@@ -1,0 +1,27 @@
+<svg id="향수" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #1d1d1b;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+
+      .cls-3 {
+        fill: #eba9cd;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_6715" data-name="사각형 6715" class="cls-1" width="40" height="40"/>
+  <g id="그룹_11682" data-name="그룹 11682" transform="translate(-2195.686 -79.305)">
+    <path id="패스_91742" data-name="패스 91742" class="cls-2" d="M2214.467,91.6a10.749,10.749,0,0,1,3.074.451l-.862-5.186h-4.423l-.862,5.186A10.746,10.746,0,0,1,2214.467,91.6Z"/>
+    <path id="패스_91743" data-name="패스 91743" class="cls-3" d="M2204.44,98.437a10.782,10.782,0,1,0,20.055,0Z"/>
+    <line id="선_221" data-name="선 221" class="cls-2" x2="6.437" transform="translate(2217.045 89.068)"/>
+    <ellipse id="타원_284" data-name="타원 284" class="cls-2" cx="4.122" cy="2.764" rx="4.122" ry="2.764" transform="translate(2223.22 86.304)"/>
+    <path id="패스_91744" data-name="패스 91744" class="cls-2" d="M2214.467,91.6a10.777,10.777,0,0,0-10.027,6.839H2224.5A10.778,10.778,0,0,0,2214.467,91.6Z"/>
+  </g>
+</svg>

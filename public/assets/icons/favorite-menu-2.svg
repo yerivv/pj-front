@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #000;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+
+      .cls-3 {
+        stroke: #5ba6d2;
+      }
+    </style>
+  </defs>
+  <g id="user-circle-plus-light" transform="translate(-0.058 -0.058)">
+    <rect id="사각형_6622" data-name="사각형 6622" class="cls-1" width="48" height="48" transform="translate(0.058 0.058)"/>
+    <circle id="타원_260" data-name="타원 260" class="cls-2" cx="7.448" cy="7.448" r="7.448" transform="translate(16.61 14.955)"/>
+    <path id="패스_91681" data-name="패스 91681" class="cls-2" d="M63.8,167.406a13.548,13.548,0,0,1,24.151,0" transform="translate(-51.816 -129.923)"/>
+    <g id="그룹_11477" data-name="그룹 11477" transform="translate(31.559 6.558)">
+      <line id="선_206" data-name="선 206" class="cls-3" x2="10" transform="translate(0 5)"/>
+      <line id="선_207" data-name="선 207" class="cls-3" y2="10" transform="translate(4.999)"/>
+    </g>
+    <path id="패스_91682" data-name="패스 91682" class="cls-2" d="M68.022,47.042a18.038,18.038,0,1,1-14.8-14.8" transform="translate(-26.157 -25.994)"/>
+  </g>
+</svg>

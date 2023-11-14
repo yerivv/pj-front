@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <path data-name="사각형 6495" style="fill:none" d="M0 0h40v40H0z"/>
+    <path data-name="패스 91629" d="M55.538 56H45.446a5.046 5.046 0 0 0-5.046 5.046A5.046 5.046 0 0 0 35.354 56H25.262A1.262 1.262 0 0 0 24 57.262v20.184a1.262 1.262 0 0 0 1.262 1.262h10.092a5.046 5.046 0 0 1 5.046 5.046 5.046 5.046 0 0 1 5.046-5.046h10.092a1.262 1.262 0 0 0 1.262-1.262V57.262A1.262 1.262 0 0 0 55.538 56z" transform="translate(-20.215 -47.538)" style="fill:#5ba6d2;opacity:.2"/>
+    <path data-name="패스 91630" d="M128 61.046A5.046 5.046 0 0 1 133.046 56h10.092a1.262 1.262 0 0 1 1.262 1.262v20.184a1.262 1.262 0 0 1-1.262 1.262h-10.092A5.046 5.046 0 0 0 128 83.754" transform="translate(-107.815 -47.538)" style="stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+    <path data-name="패스 91631" d="M24 77.446a1.262 1.262 0 0 0 1.262 1.262h10.092a5.046 5.046 0 0 1 5.046 5.046V61.046A5.046 5.046 0 0 0 35.354 56H25.262A1.262 1.262 0 0 0 24 57.262z" transform="translate(-20.215 -47.538)" style="stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg data-name="icon-airline point-30" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <path data-name="사각형 6468" style="fill:none" d="M0 0h30v30H0z"/>
+    <path data-name="패스 91605" d="m39.527 28.94-8.091-4.049-.011-5.47a3.425 3.425 0 1 0-6.85 0l-.011 5.471-8.091 4.048a.857.857 0 0 0-.473.767v2.571a.857.857 0 0 0 1.024.84l7.539-1.509v2.885L23.1 35.957a.858.858 0 0 0-.251.606v2.571a.857.857 0 0 0 1.024.84l4.113-.824 4.113.824a.857.857 0 0 0 1.024-.84v-2.571a.858.858 0 0 0-.246-.6l-1.44-1.463v-2.891l7.539 1.509a.857.857 0 0 0 1.024-.84v-2.571a.857.857 0 0 0-.473-.767z" transform="translate(-13 -12.992)" style="stroke:#000;stroke-linejoin:round;stroke-width:1.5px;fill:none"/>
+    <g transform="translate(-1660 -1303)">
+        <circle data-name="타원 224" cx="6.5" cy="6.5" r="6.5" transform="translate(1676 1319)" style="fill:#5ba6d2"/>
+        <path data-name="패스 91604" d="M.84-1.859H2.5v-2.616h1.457a2.627 2.627 0 0 0 2.912-2.707 2.631 2.631 0 0 0-2.889-2.73H.84zM2.5-5.817v-2.707h1.184A1.258 1.258 0 0 1 5.14-7.182a1.288 1.288 0 0 1-1.456 1.365z" transform="translate(1679.093 1331.421)" style="fill:#fff"/>
+    </g>
+</svg>

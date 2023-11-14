@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <g data-name="ic_arrowdown">
+        <g data-name="bt_&gt;">
+            <path data-name="Rectangle 77" style="fill:none" d="M0 0h16v16H0z" transform="rotate(-90 8 8)"/>
+            <path data-name="Path 140" d="M0 5.2 5.2 0l.434.434L10.4 5.2" transform="translate(3.1 5.4)" style="stroke:#000;stroke-width:1.5px;fill:none"/>
+        </g>
+    </g>
+</svg>

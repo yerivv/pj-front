@@ -1,0 +1,33 @@
+<svg id="패션용품" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke: #1d1d1b;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+
+      .cls-3 {
+        fill: #96c2db;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_6716" data-name="사각형 6716" class="cls-1" width="40" height="40"/>
+  <g id="그룹_11683" data-name="그룹 11683" transform="translate(-2255.543 -78.127)">
+    <path id="패스_91745" data-name="패스 91745" class="cls-2" d="M2286.551,113.162h-21.8V85.528l10.9-2.551,10.9,2.551Z"/>
+    <path id="패스_91746" data-name="패스 91746" class="cls-2" d="M2273.385,82.127h4.538l-2.269,7.68Z"/>
+    <path id="패스_91747" data-name="패스 91747" class="cls-3" d="M2275.654,89.808l-3.727,3.8-3-10.165,4.461-1.318Z"/>
+    <path id="패스_91748" data-name="패스 91748" class="cls-3" d="M2275.654,89.808l3.727,3.8,3-10.165-4.461-1.318Z"/>
+    <line id="선_222" data-name="선 222" class="cls-4" y2="23.354" transform="translate(2275.654 89.808)"/>
+    <line id="선_223" data-name="선 223" class="cls-4" y2="1.676" transform="translate(2279.019 98.869)"/>
+    <line id="선_224" data-name="선 224" class="cls-4" y2="1.676" transform="translate(2279.019 106.369)"/>
+  </g>
+</svg>

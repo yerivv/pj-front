@@ -1,0 +1,22 @@
+<svg id="ic_download" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255,0,0,0.2);
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <rect id="bg" class="cls-1" width="24" height="24"/>
+  <path id="패스_160" data-name="패스 160" class="cls-2" d="M18.5,12.5v2.667c0,.736-.8,1.333-1.778,1.333H4.278C3.3,16.5,2.5,15.9,2.5,15.167V12.5" transform="translate(1.5 2.5)"/>
+  <path id="패스_161" data-name="패스 161" class="cls-2" d="M5.833,8.333l4,4,4-4" transform="translate(2.166 2.667)"/>
+  <path id="패스_162" data-name="패스 162" class="cls-2" d="M10,12.5V2.5" transform="translate(2 1.5)"/>
+</svg>

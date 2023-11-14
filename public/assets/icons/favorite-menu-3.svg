@@ -1,0 +1,21 @@
+<svg id="chart-bar-light" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_6623" data-name="사각형 6623" class="cls-1" width="44" height="44"/>
+  <line id="선_208" data-name="선 208" class="cls-2" x1="34.375" transform="translate(4.813 35.75)"/>
+  <path id="패스_91683" data-name="패스 91683" class="cls-2" d="M100,108.625V88h9.625" transform="translate(-82.813 -72.875)"/>
+  <rect id="사각형_6624" data-name="사각형 6624" class="cls-2" width="9.625" height="28.875" transform="translate(26.813 6.875)"/>
+  <path id="패스_91684" data-name="패스 91684" class="cls-2" d="M44,148.375V136h9.625" transform="translate(-36.438 -112.625)"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <path data-name="Rectangle 6451" style="fill:none" d="M0 0h40v40H0z"/>
+    <rect data-name="Rectangle 6452" width="30" height="7.5" rx="3.75" transform="translate(5 12.5)" style="stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;fill:none"/>
+    <path data-name="Path 91573" d="M73 128v11.25a1.25 1.25 0 0 1-1.25 1.25h-22.5a1.25 1.25 0 0 1-1.25-1.25V128" transform="translate(-40.5 -108)" style="stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;fill:none"/>
+    <path data-name="Line 167" transform="translate(20 12.5)" style="stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;fill:none" d="M0 0v20"/>
+    <path data-name="Path 91574" d="M135.071 34.117C133.3 35.885 128 35.885 128 35.885s0-5.3 1.768-7.071a3.75 3.75 0 0 1 5.3 5.3z" transform="translate(-108 -23.385)" style="stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;fill:none"/>
+    <path data-name="Path 91575" d="M76.814 34.117c1.768 1.768 7.071 1.768 7.071 1.768s0-5.3-1.768-7.071a3.75 3.75 0 0 0-5.3 5.3z" transform="translate(-63.885 -23.385)" style="stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;fill:none"/>
+</svg>

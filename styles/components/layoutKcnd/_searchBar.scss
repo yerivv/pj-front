@@ -11,6 +11,9 @@
     input {
       border-color: $color-black;
     }
+    button {
+      background-image: url(#{$icon-url}icon-search-light-bk.svg);
+    }
   }
 }
 
@@ -18,7 +21,7 @@
   z-index: 1;
   display: flex;
   align-items: center;
-  margin-bottom: 1.5rem;
+  //margin-bottom: 1.5rem;
   width: 365px;
   transition: all 0.5s ease;
   input {
@@ -41,21 +44,28 @@
       visibility: visible;
     }
     transition: width 0.5s ease, opacity 0.3s ease;
+    outline: 0;
   }
 
   button {
     vertical-align: bottom;
     margin-left: 0.7rem;
+    text-indent: -999em;
+    width: 3.57rem;
+    height: 3.57rem;
+    background-image: url(#{$icon-url}gnb/icon-search.svg);
+    @include background-style;
     @include layoutTablet {
       padding: 0.5rem;
     }
-
     @include mobile {
       position: absolute;
       right: 0;
       top: 50%;
       margin-left: 0;
       transform: translateY(-50%);
+      width: 2.4rem;
+      height: 2.4rem;
     }
   }
   @include layoutTablet {

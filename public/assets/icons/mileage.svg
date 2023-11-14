@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g data-name="그룹 12988">
+        <path data-name="사각형 6680" style="fill:none" d="M0 0h40v40H0z"/>
+        <g data-name="그룹 12828">
+            <g data-name="그룹 12827" transform="translate(-630.75 -1314.248)">
+                <path data-name="빼기 9" d="M650.729 1347.749H636.25a2.513 2.513 0 0 1-2.5-2.5v-22.5a2.513 2.513 0 0 1 2.5-2.5h27.5a2.508 2.508 0 0 1 2.5 2.5v13.443A9.892 9.892 0 0 0 660 1334a10.008 10.008 0 0 0-3.125.5 7.43 7.43 0 0 0 .627-3 1.25 1.25 0 0 0-2.5 0 5 5 0 1 1-10 0 1.25 1.25 0 0 0-2.5 0 7.5 7.5 0 0 0 8.918 7.365 10.026 10.026 0 0 0-.69 8.886zm-14.479-25v2.5h27.5v-2.5z"/>
+                <circle data-name="타원 224" cx="8" cy="8" r="8" transform="translate(652 1336)"/>
+            </g>
+            <text transform="translate(24.25 33.752)" style="fill:#fff;font-size:12px;font-family:Pretendard-Bold,Pretendard;font-weight:700"><tspan x="0" y="0">M</tspan></text>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<svg id="icon-bag-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_6589" data-name="Rectangle 6589" class="cls-1" width="24" height="24"/>
+  <g id="Group_11128" data-name="Group 11128" transform="translate(0.084 0.084)">
+    <circle id="Ellipse_204" data-name="Ellipse 204" class="cls-2" cx="8.5" cy="8.5" r="8.5" transform="translate(1.916 1.916)"/>
+    <line id="Line_154" data-name="Line 154" class="cls-2" x2="4.894" y2="4.894" transform="translate(16.688 16.688)"/>
+  </g>
+</svg>

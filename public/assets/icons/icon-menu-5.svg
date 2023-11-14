@@ -1,0 +1,25 @@
+<svg id="전자제품" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #1d1d1b;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+
+      .cls-3 {
+        fill: #96c2db;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_6717" data-name="사각형 6717" class="cls-1" width="40" height="40"/>
+  <g id="그룹_11684" data-name="그룹 11684" transform="translate(-2313.711 -81.178)">
+    <rect id="사각형_6708" data-name="사각형 6708" class="cls-2" width="28.173" height="18.999" transform="translate(2319.646 90.178)"/>
+    <path id="사각형_6709" data-name="사각형 6709" class="cls-2" d="M0,0H37.618a0,0,0,0,1,0,0V0a3.985,3.985,0,0,1-3.985,3.985H3.985A3.985,3.985,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(2314.924 109.177)"/>
+    <rect id="사각형_6710" data-name="사각형 6710" class="cls-3" width="21.971" height="13.152" transform="translate(2322.748 93.101)"/>
+  </g>
+</svg>

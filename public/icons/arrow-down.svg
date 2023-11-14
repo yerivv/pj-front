@@ -1,0 +1,20 @@
+<svg id="ic_arrowup" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="ic_arrowup-2" data-name="ic_arrowup" transform="translate(16) rotate(90)">
+    <g id="bt__" data-name="bt_&gt;">
+      <rect id="사각형_77" data-name="사각형 77" class="cls-1" width="16" height="16"/>
+      <path id="패스_140" data-name="패스 140" class="cls-2" d="M0,0,5.2,5.2l.434-.434L10.4,0" transform="translate(5.4 12.9) rotate(-90)"/>
+    </g>
+  </g>
+</svg>

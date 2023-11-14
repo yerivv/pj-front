@@ -15,11 +15,25 @@ const Layout = ({ children }) => {
   const isKcndPath = pathname.includes('kcnd');
   const pageName = PATH_ROUTE_MAP[pathname] ? PATH_ROUTE_MAP[pathname] : '페이지명';
   const pageType = isGuidePath ? 'guide-content' : (isKcndPath ? 'kcnd-content' : 'basic-content');
-  
+
+  const themeSetting = (_mimCode) => {
+    let theme;
+    switch(_mimCode) {
+        case 'MLJ':
+            theme = 'jin';
+            document.documentElement.setAttribute('data-theme', theme);
+            break;
+        default:
+            //theme = ''; // 기본 테마
+            document.documentElement.removeAttribute('data-theme');
+    }
+  }
+  themeSetting('');
+
   return(
     <>
     <HeadMeta title={pageName + `- 대한항공 기내면세점`} description={`${pageName.split(".")[0]}.`} />
-    <div className="wrap">
+    <div className={`wrapper`}>
       {isGuidePath ? <GuideHeader pageName={pageName} /> : (isKcndPath ? <KcndHeader pageName={pageName} /> : <BasicHeader pageName={pageName} />)}
       <main className={pageType}>
         {children}

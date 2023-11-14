@@ -1,0 +1,17 @@
+<svg id="bt_아이콘_이전" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <rect id="아이콘영역" class="cls-1" width="32" height="32"/>
+  <path id="_" data-name="&gt;" class="cls-2" d="M-3776.82-7800l-12.18,12.18,12.18,12.18" transform="translate(3798.5 7803.5)"/>
+</svg>

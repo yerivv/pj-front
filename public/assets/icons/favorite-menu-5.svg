@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #000;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+
+      .cls-3 {
+        stroke: #5ba6d2;
+      }
+    </style>
+  </defs>
+  <g id="archive-box-light" transform="translate(-0.357 -0.357)">
+    <rect id="사각형_6627" data-name="사각형 6627" class="cls-1" width="48" height="48" transform="translate(0.357 0.357)"/>
+    <path id="패스_91688" data-name="패스 91688" class="cls-2" d="M71.852,73.369H41.517A1.517,1.517,0,0,1,40,71.852V46.067L43.034,40h27.3l3.034,6.067V71.852A1.517,1.517,0,0,1,71.852,73.369Z" transform="translate(-32.327 -32.327)"/>
+    <line id="선_211" data-name="선 211" class="cls-2" x2="33" transform="translate(7.857 13.857)"/>
+    <g id="heart-light" transform="translate(12.357 15.357)">
+      <rect id="사각형_6628" data-name="사각형 6628" class="cls-1" width="24" height="24"/>
+      <path id="패스_91689" data-name="패스 91689" class="cls-3" d="M37.387,56.5s-9.375-5.25-9.375-11.625a4.876,4.876,0,0,1,9.375-1.878h0a4.876,4.876,0,0,1,9.375,1.878C46.762,51.245,37.387,56.5,37.387,56.5Z" transform="translate(-25.386 -36.245)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #5ba6d2;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+
+      .cls-3 {
+        stroke: #000;
+      }
+    </style>
+  </defs>
+  <g id="order" transform="translate(-1569 -2016)">
+    <g id="img" transform="translate(1555.355 2002.355)">
+      <rect id="사각형_6470" data-name="사각형 6470" class="cls-1" width="44" height="44" transform="translate(13.645 13.644)"/>
+      <path id="패스_91609" data-name="패스 91609" class="cls-2" d="M9500.958,12111.8l5,5.977,11.5-11" transform="translate(-9472.704 -12075.762)"/>
+      <g id="bag" transform="translate(13.645 13.644)">
+        <rect id="사각형_6550" data-name="사각형 6550" class="cls-1" width="44" height="44" transform="translate(0 0)"/>
+        <rect id="사각형_6551" data-name="사각형 6551" class="cls-3" width="35.2" height="26.4" rx="5" transform="translate(4.4 9.68)"/>
+        <path id="패스_91669" data-name="패스 91669" class="cls-3" d="M88,29.28a5.28,5.28,0,0,1,10.56,0" transform="translate(-71.28 -20.48)"/>
+      </g>
+    </g>
+  </g>
+</svg>

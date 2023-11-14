@@ -1,0 +1,21 @@
+<svg id="icon-bag-mobile" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_6588" data-name="Rectangle 6588" class="cls-1" width="24" height="24"/>
+  <g id="Group_11127" data-name="Group 11127" transform="translate(-1751.75 -1221.293)">
+    <rect id="Rectangle_6587" data-name="Rectangle 6587" class="cls-2" width="20" height="14" rx="4" transform="translate(1753.75 1228.958)"/>
+    <path id="Path_91671" data-name="Path 91671" class="cls-2" d="M10.774,0V3.592A5.387,5.387,0,0,1,0,3.592V0" transform="translate(1769.137 1232.606) rotate(180)"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg id="icon-signin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_6442" data-name="Rectangle 6442" class="cls-1" width="24" height="24"/>
+  <path id="Path_91567" data-name="Path 91567" class="cls-2" d="M94,93.875l3.938-3.937L94,86" transform="translate(-85.188 -77.938)"/>
+  <line id="Line_165" data-name="Line 165" class="cls-2" x2="10.5" transform="translate(2.247 12)"/>
+  <path id="Path_91568" data-name="Path 91568" class="cls-2" d="M120,40h6.75a.75.75,0,0,1,.75.75v15a.75.75,0,0,1-.75.75H120" transform="translate(-108.75 -36.25)"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <circle cx="15" cy="15" r="15" style="fill:#fff"/>
+    <g data-name="outer ring" style="stroke:#707070;stroke-width:1.5px;opacity:.15;fill:none">
+        <circle cx="15" cy="15" r="15" style="stroke:none"/>
+        <circle cx="15" cy="15" r="14.25" style="fill:none"/>
+    </g>
+</svg>

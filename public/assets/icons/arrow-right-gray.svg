@@ -1,0 +1,17 @@
+<svg id="caret-right-bold" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #dfdfdf;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_6462" data-name="사각형 6462" class="cls-1" width="24" height="24"/>
+  <path id="패스_91600" data-name="패스 91600" class="cls-2" d="M96,48l7.5,7.5L96,63" transform="translate(-87 -43.5)"/>
+</svg>

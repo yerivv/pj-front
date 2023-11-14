@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g transform="translate(14290 651)">
+        <rect data-name="사각형 6633" width="18" height="18" rx="1" transform="translate(-14287 -648)" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none;stroke:#000"/>
+        <path data-name="선 225" transform="translate(-14273 -649)" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none;stroke:#000" d="M0 0v3"/>
+        <path data-name="선 226" transform="translate(-14283 -649)" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none;stroke:#000" d="M0 0v3"/>
+        <path data-name="선 227" transform="translate(-14287 -643)" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none;stroke:#000" d="M0 0h18"/>
+    </g>
+    <path d="m4 0 1.2 2.686 2.8.37-2.058 2.03L6.472 8 4 6.569 1.528 8l.53-2.914L0 3.056l2.8-.37z" transform="translate(8 10.5)" style="fill:#bed600;stroke:#bed600;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px"/>
+</svg>

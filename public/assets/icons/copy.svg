@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #666;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="copy-thin" transform="translate(0 0.46)">
+    <rect id="사각형_6428" data-name="사각형 6428" class="cls-1" width="24" height="24" transform="translate(0 -0.46)"/>
+    <path id="패스_91612" data-name="패스 91612" class="cls-2" d="M95.568,52.1h4.541V39.993H88v4.541" transform="translate(-79.866 -36.095)"/>
+    <rect id="사각형_6429" data-name="사각형 6429" class="cls-2" width="11.938" height="11.938" transform="translate(3.184 8.418)"/>
+  </g>
+</svg>
