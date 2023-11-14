@@ -48,41 +48,25 @@
   }
 
   button {
+    display: inline-flex;
     vertical-align: bottom;
     margin-left: 0.7rem;
     text-indent: -999em;
     width: 3.57rem;
     height: 3.57rem;
     background-image: url(#{$icon-url}gnb/icon-search.svg);
-    @include background-style;
+    @include background-style(2.4rem 2.4rem);
     @include layoutTablet {
-      padding: 0.5rem;
-    }
-    @include mobile {
       position: absolute;
       right: 0;
       top: 50%;
       margin-left: 0;
       transform: translateY(-50%);
-      width: 2.4rem;
-      height: 2.4rem;
+      width: 3.4rem;
+      height: 3.4rem;
     }
   }
   @include layoutTablet {
-    width: 35%;
-    margin-bottom: 0;
-
-    button {
-      position: absolute;
-      right: 48px;
-    }
-    input {
-      opacity: 0;
-      min-width: auto;
-      width: 0px;
-    }
-  }
-  @include mobile {
     position: relative;
     width: 100%;
     margin-bottom: 0;

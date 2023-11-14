@@ -17,6 +17,9 @@ const Layout = ({ children }) => {
   const pageType = isGuidePath ? 'guide-content' : (isKcndPath ? 'kcnd-content' : 'basic-content');
 
   const themeSetting = (_mimCode) => {
+    if (typeof window === 'undefined' || typeof document === 'undefined') {
+      return; // 서버사이드에서 실행되는 경우 함수를 종료합니다.
+    }
     let theme;
     switch(_mimCode) {
         case 'MLJ':
@@ -28,7 +31,7 @@ const Layout = ({ children }) => {
             document.documentElement.removeAttribute('data-theme');
     }
   }
-  themeSetting('');
+  themeSetting('HQS');
 
   return(
     <>

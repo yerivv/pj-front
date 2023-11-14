@@ -81,3 +81,16 @@
   $map: map-get($theme-colors, $key);
   @return map-get($map, $variant);
 }
+
+@mixin icon-box($width, $height) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  background: {
+    size: contain;
+    position: center;
+    repeat: no-repeat;
+  }
+  vertical-align: baseline;
+  text-indent: -999em;
+}

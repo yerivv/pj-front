@@ -1,546 +1,120 @@
 .header-wrap {
-  .bg {
-    position: relative;
-    top: 0;
-    z-index: 1005;
-    width: 100%;
-    height: 189px;
-    transition: height 300ms ease-out;
-  }
-
-  .wrapper {
-    position: relative;
-    max-width: 1680px;
-    width: 100%;
-    padding-top: 20px;
-    margin: auto;
-    @include layoutTablet {
-      max-width: none;
-      width: auto;
-      height: 8.4rem;
-      padding: 0;
-    }
-    @include layoutOther {
-      padding-right: 25px;
-      padding-left: 25px;
-    }
-  }
+  position: relative;
+  z-index: 999;
+  background: linear-gradient(to bottom, $color-black, rgba(0, 69, 56, 0.26) 103%);
+  color: $color-white;
+  transition: all 0.3s ease-out;
 
   .container {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 2.6rem;
-    @include layoutTablet {
-      margin-bottom: 0.3rem;
-      &:first-child {
-        align-items: center;
-        width: 100%;
-        padding: 0 1.5rem;
-      }
-      &:last-child {
-        &::-webkit-scrollbar {
-          display: none;
-        }
-      }
-    }
-    @include mobile {
-      &:first-child {
-        padding-top: 1.2rem;
-        margin-bottom: 0.8rem;
-      }
-    }
-  }
-  .container2 {
-    @extend .container;
-    margin-bottom: 0;
-  }
-
-  .innerLeft {
-    display: flex;
     align-items: center;
-    width: auto;
-    @include layoutTablet {
-      justify-content: flex-start;
-      gap: 2rem;
-      min-width: auto;
-      width: 100%;
-    }
-    @include mobile {
-      gap: 1rem;
-    }
-    &.searchControl {
-      width: 100%;
-    }
-  }
-  .innerLeftFlexEnd {
-    @extend .innerLeft;
-    justify-content: space-between;
-    @include layoutTablet {
-      align-items: center;
-      justify-content: flex-start;
-    }
-  }
-
-  .innerRight {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logoContainer {
-    margin-right: 30px;
-    @include mobile {
-      flex-shrink: 0;
-      margin-right: 0;
-    }
-    .logoImage {
-      display: block;
-      min-width: 140px;
-      height: 62.5px;
-      @include background-style;
-      text-indent: -999em;
-      cursor: pointer;
-      @include layoutTablet {
-        min-width: auto;
-        width: 62.7px;
-        height: 28px;
-      }
-    }
-  }
-
-  .utilMenu {
-    display: flex;
-    align-items: center;
-    li {
-      margin-right: 1rem;
-      @include layoutTablet {
-        margin-right: 0;
-        margin-left: 3px;
-      }
-      &:nth-child(-n + 4) {
-        @include layoutTablet {
-          display: none;
-        }
-      }
-      &:last-child {
-        margin-right: 0;
-        @include layoutTablet {
-          display: none;
-        }
-      }
-    }
-    .menu {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-      height: 8rem;
-      padding: 5px;
-      border-radius: 1rem;
-      @include layoutTablet {
-        height: 100%;
-        padding: 0;
-      }
-      &:hover {
-        background-color: $color-white;
-        @include layoutTablet {
-          background-color: transparent;
-        }
-        i {
-          top: 0;
-          transform: translateY(0);
-          @include layoutTablet {
-            top: 0;
-            transform: translateY(0);
-          }
-        }
-        span {
-          opacity: 1;
-          @include layoutTablet {
-            opacity: 0;
-          }
-        }
-        .shopNum {
-          top: 0;
-        }
-      }
-      i {
-        position: relative;
-        top: 50%;
-        width: 3rem;
-        height: 3rem;
-        @include background-style(contain, no-repeat, center, 100%);
-        transform: translateY(-50%);
-        @include layoutTablet {
-          top: 0;
-          width: 3.4rem;
-          height: 3.4rem;
-          transform: translateY(0);
-        }
-        @include mobile {
-          width: 2.4rem;
-          height: 2.4rem;
-        }
-      }
-      span {
-        position: absolute;
-        bottom: 5px;
-        color: $color-black;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 14px;
-        text-align: center;
-        opacity: 0;
-        @include mobile {
-          display: none;
-        }
-      }
-      .thumb {
+    height: 100px;
+    padding: 20px 0 0;
+    .box-logo {
+      margin-right: 30px;
+      .logo {
         display: block;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        border: 1px solid grey;
-        background-color: $color-white;
-        @include background-style(cover);
-      }
-      .shopNum {
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 20px;
-        right: 5px;
-        min-width: 14px;
-        height: 14px;
-        padding: 0 3px;
-        border-radius: 20px;
-        background-color: #e0003f;
-        color: $color-white;
-        font-size: 9px;
-        text-align: center;
-        @include layoutTablet {
-          display: flex;
-          top: 0px;
-          right: 0px;
-        }
-        @include mobile {
-          top: -1px;
-          right: 0;
-        }
+        min-width: 140px;
+        height: 62.5px;
+        background-image: var(--logo-white);
+        @include background-style;
+        text-indent: -999em;
       }
     }
-  }
-
-  .exchangeRate {
-    display: flex;
-    align-items: center;
-    margin-left: 14px;
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    padding-right: 9px;
-    border-right: 1px solid $color-white;
-    border-color: rgba(255, 255, 255, 0.2);
-    margin-top: 1rem;
-    @include layoutTablet {
-      display: none;
-    }
-    &.search {
-      min-width: 133px;
-    }
-  }
-
-  .langSelectBox {
-    position: relative;
-    @include layoutTablet {
-      display: none;
-    }
-    .default-option {
-      height: 30px;
-      font-size: 11px;
-      padding: 5px 2rem 5px 8px;
-      margin-top: 1rem;
-      cursor: pointer;
-    }
-    .option-box {
-      /* display: none; */
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      padding: 5px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      background-color: $color-white;
-      transform: translateY(100%);
-    }
-    .option {
-      font-size: 1.1rem;
-      color: $color-black;
-      padding: 5px;
-      cursor: pointer;
-      &:hover {
-        background-color: rgba(91, 166, 210, 0.1);
-      }
-    }
-  }
-
-  .menuIconContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    margin-right: 30px;
-    transition: all 300ms;
-    @include layoutTablet {
-      display: none;
-    }
-    .menu {
-      width: 45px;
-      height: 45px;
-      background-image: url($icon-url+'gnb/header-menu-icon.svg');
-      @include background-style;
-      text-indent: -999em;
-      filter: invert(1);
-      cursor: pointer;
-    }
-  }
-  .logoContainer2 {
-    display: none;
-  }
-
-  .gnbWrapper {
-    display: flex;
-    overflow: hidden;
-    min-height: 48px;
-    -webkit-overflow-scrolling: touch;
-    .gnbMenus {
-      overflow: hidden;
-      margin-bottom: 0;
-      overflow-x: auto !important;
-      position: relative;
-      display: inline-block;
-      flex: 1 1 auto;
-      white-space: nowrap;
-      width: 100%;
-      ul {
+    .box-util {
+      margin-left: auto;
+      .util-menu {
         display: flex;
-      }
-      li {
-        a {
-          display: inline-flex;
-          align-items: center;
+        align-items: center;
+        gap: 0 10px;
+        .menu {
+          display: flex;
+          flex-direction: column;
           justify-content: center;
-          font-size: 2rem !important;
-          font-weight: normal;
-          min-height: 60px;
-          margin: 0 16px;
-        }
-      }
-    }
-  }
-
-  .MallLink {
-    align-self: flex-start;
-    display: inline-block;
-    width: 8.1rem;
-    color: $color-white;
-    line-height: 4.3rem;
-    text-align: center;
-    border: 1px solid $color-white;
-    border-radius: 21.5px;
-    margin-right: 1.2rem;
-    margin-top: 0.3rem;
-    cursor: pointer;
-    @include layoutTablet {
-      display: none;
-    }
-  }
-
-  .lineSearch {
-    position: relative;
-    width: 269px;
-    max-height: 4.3rem;
-    font-weight: 700;
-    text-align: left;
-    padding: 1rem 2rem 1rem 2.2rem;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.16);
-    border-radius: 100px;
-    border: solid 1px #5b6768;
-    transform: translateX(-10px);
-    color: $color-black;
-    background-color: #f7f7f7;
-    outline: 0;
-    @include layoutTablet{
-      display: none;
-    }
-    .planImage {
-      position: absolute;
-      right: -10px;
-      top: 50%;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      border: solid 1px #5b6768;
-      background-color: $color-white;
-      background-image: var(--img-plane);
-      @include background-style;
-      transform: translateY(-50%);
-      cursor: pointer;
-      @include layoutTablet {
-        display: none;
-      }
-    }
-  }
-
-  //기본
-  color: $color-white;
-  .bg {
-    background: linear-gradient(to bottom, $color-black, rgba(0, 69, 56, 0.26) 103%);
-  }
-  .logoImage {
-    background-image: var(--logo-white);
-  }
-  .utilMenu {
-    .menu {
-      i {
-        @for $i from 1 through 5 {
-          &.icon#{$i} {
-            background-image: url($icon-url+'gnb/icon-submenu-'+$i+'.svg');
+          position: relative;
+          width: 40px;
+          height: 80px;
+          border-radius: 10px;
+          border: 1px solid transparent;
+          text-align: center;
+          .icon {
+            @include icon-box(30px, 30px);
+            @for $i from 1 through 5 {
+              &.icon#{$i} {
+                background-image: url($icon-url+'gnb/icon-submenu-'+$i+'.svg');
+              }
+            }
           }
-        }
-      }
-      &:hover i {
-        @for $i from 1 through 5 {
-          &.icon#{$i} {
-            background-image: url($icon-url+'gnb/icon-submenu-'+$i+'-black.svg');
+          .icon, .thumb {
+            margin: 4px auto;
           }
-        }
-      }
-    } 
-  }
-
-  //white 테마
-  &.themeWhite {
-    color: $color-black;
-    .bg {
-      opacity: 1;
-      background: $color-white;
-      border-bottom: 1px solid #ddd;
-    }
-    .logoImage {
-      background-image: var(--logo-black);
-    }
-    .utilMenu {
-      .menu {
-        i {
-          @for $i from 1 through 5 {
-            &.icon#{$i} {
-              background-image: url($icon-url+'gnb/icon-submenu-'+$i+'-black.svg');
+          .thumb {
+            overflow: hidden;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid gray;
+            background-color: $color-white;
+          }
+          .text {
+            display: none;
+            width: 80%;
+            height: 40px;
+            margin: 0 auto;
+            font: {
+              size: 12px;
+              weight: 700;
+            }
+            text-align: center;
+          }
+          .shopNum {
+            position: absolute;
+            top:50%;
+            right: 2px;
+            width: 16px;
+            height: 16px;
+            margin-top: -16px;
+            border-radius: 50%;
+            background-color: $color-red;
+            color: $color-white;
+            font-size: 11px;
+            line-height: 16px;
+            text-indent: 0;
+            text-align: center;
+          }
+          &:hover {
+            justify-content: flex-end;
+            border-color: rgba(112, 112, 112, 0.15);
+            background-color: $color-white;
+            color: $color-black;
+            .icon {
+              @for $i from 1 through 5 {
+                &.icon#{$i} {
+                  background-image: url($icon-url+'gnb/icon-submenu-'+$i+'-black.svg');
+                }
+              }
+            }
+            .text {
+              display: block;
+            }
+            .shopNum {
+              top:2px;
+              margin-top: 0;
             }
           }
         }
       }
     }
-    .menuIconContainer {
-      .menu {
-        filter: invert(0);
-      }
-    }
-    .MallLink {
-      color: $color-black;
-      border-color: #5b6768;
-    }
   }
 
-  //black 테마
-  &.themeBlack {
-    .bg {
-      opacity: 1;
-      background: var(--color-base);
-    }
+  .container-gnb {
+    display: flex;
   }
+}
 
-  //scroll 후 작아진 영역
-  &.small {
-    .bg {
-      position: fixed;
-      top:0px;
-      height:80px;
-      transition: background 300ms ease-out;
-      @include layoutTablet {
-        max-height: 56px;
-      }
-    }
-    .wrapper {
-      padding-top: 0;
-      @include layoutTablet {
-        padding: 0;
-      }
-    }
-    .container {
-      margin-bottom: 2.6rem;
-      @include layoutTablet {
-        padding: 0 0 0 1.5rem !important;
-      }
-    }
-    .container2 {
-      @extend .container;
-      align-items: center;
-      margin-bottom: 0;
-    }
-    
-    .innerRight {
-      @include layoutTablet {
-        display: none;
-      }
-    }
-    .logoContainer2 {
-      display: block;
-      margin-right: 1rem;
-      .logoImage {
-        max-width: 6.27rem;
-        height: 4rem;
-      }
-    }
-    .menuIconContainer {
-      margin-right: 4rem;
-      width: 4rem;
-      height: 4rem;
-      padding: 0;
-      @include layoutTablet {
-        min-width: 6.27rem;
-        width: 6.27rem;
-        height: 2.8rem;
-        margin: 0;
-        justify-content: flex-start;
-      }
-    }
-    .gnbWrapper {
-      .gnbMenus {
-        li {
-          a {
-            min-height: 80px;
-          }
-        }
-      }
-    }
-  }
-
-  .WhiteBg {
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    width: 100%;
-    height: 80px;
-    background: transparent;
-    @include layoutTablet {
-      max-height: 56px;
-    }
-  }
-
-  .MainNullSpace {
-    position: fixed;
-    width: 100%;
-    height: 165px;
-    background: $color-white;
-  }
+.header-wrap.small {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
