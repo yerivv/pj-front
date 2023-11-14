@@ -1,24 +1,68 @@
+$header-max-width: 1680px;
+@mixin display-layoutTablet($view) {
+  @include layoutTablet {
+    display: $view;
+  }
+}
+.header-box {
+  display: flex;
+  align-items: center;
+  max-width: $header-max-width;
+  margin: 0 auto;
+}
+// 기본 header
 .header-wrap {
   position: relative;
   z-index: 999;
+  padding: 0 20px;
   background: linear-gradient(to bottom, $color-black, rgba(0, 69, 56, 0.26) 103%);
   color: $color-white;
   transition: all 0.3s ease-out;
 
+  .logo {
+    display: block;
+    min-width: 140px;
+    height: 63px;
+    background-image: var(--logo-white);
+    @include background-style;
+    text-indent: -999em;
+  }
+
+  .line {
+    width: 1px;
+    height: 20px;
+    margin: 0 8px;
+    background-color: $color-white;
+    opacity: .2;
+  }
+
   .container {
-    display: flex;
-    align-items: center;
-    height: 100px;
-    padding: 20px 0 0;
+    @extend .header-box;
+    padding: 29px 0 20px;
     .box-logo {
       margin-right: 30px;
       .logo {
         display: block;
         min-width: 140px;
-        height: 62.5px;
+        height: 63px;
         background-image: var(--logo-white);
         @include background-style;
         text-indent: -999em;
+      }
+    }
+    .box-search {
+      display: flex;
+      align-items: center;
+      .exchange-rate {
+        margin-left: 10px;
+        font: {
+          size: 1.2rem;
+        }
+      }
+      .lang-selectBox {
+        font: {
+          size: 1.2rem;
+        }
       }
     }
     .box-util {
@@ -108,13 +152,116 @@
   }
 
   .container-gnb {
-    display: flex;
+    @extend .header-box;
+    .box-logo {
+      display: none;
+      @include display-layoutTablet(block);
+    }
+    .box-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right:30px;
+      @include display-layoutTablet(none);
+      .menu {
+        width: 45px;
+        height: 45px;
+        background-image: url($icon-url+'gnb/header-menu-icon.svg');
+        @include background-style;
+        text-indent: -999em;
+        filter: invert(1);
+        cursor: pointer;
+      }
+    }
+    .box-gnb {
+      ul {
+        display: flex;
+        flex-wrap: nowrap;
+        li {
+          padding:0 25px;
+        }
+        .btn {
+          display: inline-flex;
+          align-items: center;
+          height: 66px;
+          padding-top: 4px;
+          border-bottom: 4px solid transparent;
+          font-size: 2rem;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        .active .btn {
+          border-color: $color-white;
+          font-weight: 700;
+        }
+      }
+    }
+    .box-util {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      .line {
+        margin: 0 15px;
+      }
+    }
   }
 }
 
+// white 테마
+.header-wrap.themeWhite {
+  opacity: 1;
+  background: $color-white;
+  border-bottom: 1px solid #ddd;
+  color: $color-black;
+  .line {
+    background-color: $color-black;
+  }
+  .box-logo .logo {
+    background-image: var(--logo-black);
+  }
+  .container {
+    .box-util .util-menu .menu:hover {
+      border-color: transparent;
+    }
+    .box-util .util-menu .menu .icon {
+      @for $i from 1 through 5 {
+        &.icon#{$i} {
+          background-image: url($icon-url+'gnb/icon-submenu-'+$i+'-black.svg');
+        }
+      }
+    }
+  }
+  .container-gnb {
+    .box-menu .menu {
+      filter: invert(0);
+    }
+    .box-gnb ul .active .btn {
+      border-color: $color-black;
+    }
+  }
+}
+
+// black 테마
+.header-wrap.themeBlack {
+  opacity: 1;
+  background: var(--color-base);
+}
+
+// scroll small
 .header-wrap.small {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  .container-gnb {
+    .box-logo {
+      display: block;
+      margin-right: 1rem;
+      .logo {
+        max-width: 6.27rem;
+        height: 4rem;
+      }
+    }
+  }
 }

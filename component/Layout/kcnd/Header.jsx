@@ -71,16 +71,16 @@ const KcndHeader = ({ pageName }) => {
           />
         {searchControl || (
           <>
-          <div className="exchangeRate">
+          <div className="exchange-rate">
             오늘의 환율 $1 = 1,356원
           </div>
-          <div className="langSelectBox">
+          <div className="line"></div>
+          <div className="lang-selectBox">
             <button className="default-option">한국어</button>
           </div>
           </>
         )}
         </div>
-        
         <div className={`box-util`}>
           <ul className="util-menu">
             <li>
@@ -138,43 +138,51 @@ const KcndHeader = ({ pageName }) => {
       </div>
     )}
       <div className="container-gnb">
-        <div className="innerLeftFlexEnd">
-          <div className="menuIconContainer">
-            <span className="menu">전체메뉴</span>
-          </div>
-          <div className="logoContainer logoContainer2">
-            <Link href="#"><a className="logoImage">대한항공 기내면세점</a></Link>
-          </div>
-          <div className="gnbWrapper">
-            <div className="gnbMenus">
-              <ul className="MuiTabs-scroller">
-                <li>
-                  <Link href="#"><a>메뉴1</a></Link>
-                </li>
-                <li>
-                  <Link href="#"><a>메뉴2</a></Link>
-                </li>
-                <li>
-                  <Link href="#"><a>메뉴3</a></Link>
-                </li>
-                <li>
-                  <Link href="#"><a>메뉴4</a></Link>
-                </li>
-                <li>
-                  <Link href="#"><a>메뉴5</a></Link>
-                </li>
-                <li>
-                  <Link href="#"><a>메뉴6</a></Link>
-                </li>
-              </ul>
-            </div>
+        <div className="box-menu">
+          <span className="menu">전체메뉴</span>
+        </div>
+        <div className="box-logo">
+          <Link href="#"><a className="logo">대한항공 기내면세점</a></Link>
+        </div>
+        <div className="box-gnb">
+          <div className="menus">
+            <ul>
+              <li className="active">
+                <Link href="#"><a className="btn">베스트</a></Link>
+              </li>
+              <li>
+                <Link href="#"><a className="btn">세일</a></Link>
+              </li>
+              <li>
+                <Link href="#"><a className="btn">선물하기</a></Link>
+              </li>
+              <li>
+                <Link href="#"><a className="btn">주류전문관</a></Link>
+              </li>
+              <li>
+                <Link href="#"><a className="btn">스토리</a></Link>
+              </li>
+              <li>
+                <Link href="#"><a className="btn">이벤트</a></Link>
+              </li>
+              <li>
+                <Link href="#"><a className="btn">혜택</a></Link>
+              </li>
+              <li>
+                <Link href="#"><a className="btn">카탈로그</a></Link>
+              </li>
+            </ul>
           </div>
         </div>
-        <div className="innerRight">
-        {small ? (
-          <div>로그인/회원가입 or 마이페이지/장바구니</div>
-        ) : (
-          <>
+        <div className="box-util">
+      {small ? (
+        <>
+          <Link href="#"><a>로그인</a></Link>
+          <span className="line"></span>
+          <Link href="#"><a>회원가입</a></Link>
+        </>
+      ) : (
+        <>
           <Link href="/employees-mall">
             <a className="MallLink">임직원몰</a>
           </Link>
@@ -182,8 +190,8 @@ const KcndHeader = ({ pageName }) => {
             고객님이 탑승하는 노선 선택
             <span className="planImage"></span>
           </div>
-          </>
-        )}
+        </>
+      )}
         </div>
       </div>
     </header>
