@@ -18,7 +18,9 @@ $header-max-width: 1680px;
   background: linear-gradient(to bottom, $color-black, rgba(0, 69, 56, 0.26) 103%);
   color: $color-white;
   transition: all 0.3s ease-out;
-
+  @include layoutTablet {
+    padding: 0 15px;
+  }
   .logo {
     display: block;
     min-width: 140px;
@@ -26,6 +28,11 @@ $header-max-width: 1680px;
     background-image: var(--logo-white);
     @include background-style;
     text-indent: -999em;
+    @include layoutTablet {
+      min-width: auto;
+      width: 62.7px;
+      height: 28px;
+    }
   }
 
   .line {
@@ -34,35 +41,111 @@ $header-max-width: 1680px;
     margin: 0 8px;
     background-color: $color-white;
     opacity: .2;
+    @include display-layoutTablet(none)
   }
 
   .container {
     @extend .header-box;
-    padding: 29px 0 20px;
+    padding: 20px 0 10px;
+    @include layoutTablet {
+      padding: 15px 0 0;
+    }
+    .box-set {
+      display: flex;
+      align-items: flex-end;
+      width: 100%;
+      @include layoutTablet {
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
     .box-logo {
       margin-right: 30px;
-      .logo {
-        display: block;
-        min-width: 140px;
-        height: 63px;
-        background-image: var(--logo-white);
-        @include background-style;
-        text-indent: -999em;
+      @include mobile {
+        margin-right: 0;
       }
     }
     .box-search {
       display: flex;
       align-items: center;
-      .exchange-rate {
-        margin-left: 10px;
-        font: {
-          size: 1.2rem;
+      .search-bar {
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        width: 365px;
+        transition: all 0.5s ease;
+        @include layoutTablet {
+          align-items: flex-end;
+          width: 100%;
+        }
+        input {
+          min-width: 320px;
+          width: 100%;
+          height: 30px;
+          color: $color-white;;
+          background-color: transparent;
+          border: 0;
+          border-bottom: 2px solid $color-white;
+          box-shadow: none;
+          transition: width 0.5s ease, opacity 0.3s ease;
+          outline: 0;
+          ::placeholder {
+            color: #999;
+            font-size: 14px;
+          }
+          :focus {
+            outline: none;
+            width: 100%;
+            opacity: 1;
+            visibility: visible;
+          }
+          @include layoutTablet {
+            width: 0;
+            min-width: auto;
+            padding: 0;
+            opacity: 0;
+            padding-right: 0;
+            transition: none;
+          }
+        }
+        button {
+          @include icon-box(40px, 40px);
+          background-image: url(#{$icon-url}gnb/icon-search.svg);
+          @include background-style(30px 30px);
+          @include layoutTablet {
+            @include icon-box(28px, 28px);
+            @include background-style;
+          }
         }
       }
-      .lang-selectBox {
+      &.searchControl {
+        width: 80%;
+        .search-bar {
+          width: 100%;
+        }
+        @include layoutTablet {
+          width: 70%;
+          input {
+            width: 100%;
+            opacity: 1;
+          }
+        }
+      }
+      .exchange-rate {
+        margin-left: 10px;
+        @include display-layoutTablet(none);
         font: {
           size: 1.2rem;
         }
+        white-space: nowrap;
+      }
+      .lang-selectBox {
+        @include display-layoutTablet(none);
+        font: {
+          size: 1.2rem;
+        }
+        white-space: nowrap;
       }
     }
     .box-util {
@@ -71,6 +154,15 @@ $header-max-width: 1680px;
         display: flex;
         align-items: center;
         gap: 0 10px;
+        li {
+          @include display-layoutTablet(none);
+          &.cart {
+            @include display-layoutTablet(block);
+            @include layoutTablet {
+              margin-left: 10px;
+            }
+          }
+        }
         .menu {
           display: flex;
           flex-direction: column;
@@ -81,16 +173,27 @@ $header-max-width: 1680px;
           border-radius: 10px;
           border: 1px solid transparent;
           text-align: center;
+          @include layoutTablet {
+            width: 28px;
+            height: 28px;
+          }
           .icon {
             @include icon-box(30px, 30px);
             @for $i from 1 through 5 {
               &.icon#{$i} {
                 background-image: url($icon-url+'gnb/icon-submenu-'+$i+'.svg');
+                @include background-style;
               }
+            }
+            @include layoutTablet {
+              @include icon-box(28px, 28px);
             }
           }
           .icon, .thumb {
             margin: 4px auto;
+            @include layoutTablet {
+              margin: 0;
+            }
           }
           .thumb {
             overflow: hidden;
@@ -125,6 +228,9 @@ $header-max-width: 1680px;
             line-height: 16px;
             text-indent: 0;
             text-align: center;
+            @include layoutTablet {
+              right: -2px;
+            }
           }
           &:hover {
             justify-content: flex-end;
@@ -138,12 +244,29 @@ $header-max-width: 1680px;
                 }
               }
             }
+            @include layoutTablet {
+              justify-content: center;
+              border-color: transparent;
+              background-color: transparent;
+              .icon {
+                @for $i from 1 through 5 {
+                  &.icon#{$i} {
+                    background-image: url($icon-url+'gnb/icon-submenu-'+$i+'.svg');
+                  }
+                }
+              }
+            }
             .text {
               display: block;
+              @include display-layoutTablet(none);
             }
             .shopNum {
               top:2px;
               margin-top: 0;
+              @include layoutTablet {
+                top: 50%;
+                margin-top: -16px;
+              }
             }
           }
         }
@@ -153,9 +276,10 @@ $header-max-width: 1680px;
 
   .container-gnb {
     @extend .header-box;
+    align-items: flex-end;
     .box-logo {
       display: none;
-      @include display-layoutTablet(block);
+      @include display-layoutTablet(none);
     }
     .box-menu {
       display: flex;
@@ -165,7 +289,7 @@ $header-max-width: 1680px;
       @include display-layoutTablet(none);
       .menu {
         width: 45px;
-        height: 45px;
+        height: 66px;
         background-image: url($icon-url+'gnb/header-menu-icon.svg');
         @include background-style;
         text-indent: -999em;
@@ -178,7 +302,12 @@ $header-max-width: 1680px;
         display: flex;
         flex-wrap: nowrap;
         li {
-          padding:0 25px;
+          padding:0 16px;
+          @include layoutTablet {
+            &:first-child {
+              padding-left: 0;
+            }
+          }
         }
         .btn {
           display: inline-flex;
@@ -189,6 +318,12 @@ $header-max-width: 1680px;
           font-size: 2rem;
           &:hover {
             text-decoration: underline;
+            text-underline-position: under;
+            text-decoration-thickness: 1px;
+          }
+          @include layoutTablet {
+            height: 41px;
+            font-size: 1.8rem;
           }
         }
         .active .btn {
@@ -200,9 +335,53 @@ $header-max-width: 1680px;
     .box-util {
       display: flex;
       align-items: center;
+      gap: 0 10px;
+      padding: 0 0 10px;
       margin-left: auto;
+      @include display-layoutTablet(none);
       .line {
         margin: 0 15px;
+      }
+      .mall-link {
+        display: inline-flex;
+        align-items: center;
+        height: 43px;
+        padding: 0 20px;
+        border-radius: 21.5px;
+        border: 1px solid $color-white;
+        background-color: transparent;
+        font-weight: 500;
+      }
+      .line-search {
+        position: relative;
+        height: 60px;
+        padding-right: 20px;
+        .text {
+          display: inline-flex;
+          align-items: center;
+          height: 43px;
+          padding: 0 58px 0 20px;
+          border-radius: 21.5px;
+          border: 1px solid #5b6768;
+          background-color: $color-bg2;
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.16);
+          font-weight: 500;
+          color: $color-black;
+          white-space: nowrap;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          border: 1px solid #0a204b;
+          background-color: $color-white;
+          background-image: var(--img-plane);
+          @include background-style;
+        }
       }
     }
   }
@@ -212,8 +391,16 @@ $header-max-width: 1680px;
 .header-wrap.themeWhite {
   opacity: 1;
   background: $color-white;
-  border-bottom: 1px solid #ddd;
   color: $color-black;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #ddd;
+  }
   .line {
     background-color: $color-black;
   }
@@ -221,6 +408,14 @@ $header-max-width: 1680px;
     background-image: var(--logo-black);
   }
   .container {
+    .box-search .search-bar {
+      input {
+        border-color: $color-black;
+      }
+      button {
+        filter: invert(1);
+      }
+    }
     .box-util .util-menu .menu:hover {
       border-color: transparent;
     }
@@ -239,6 +434,9 @@ $header-max-width: 1680px;
     .box-gnb ul .active .btn {
       border-color: $color-black;
     }
+    .mall-link {
+      border-color: $color-black;
+    }
   }
 }
 
@@ -255,6 +453,7 @@ $header-max-width: 1680px;
   left: 0;
   width: 100%;
   .container-gnb {
+    align-items: center;
     .box-logo {
       display: block;
       margin-right: 1rem;
@@ -262,6 +461,29 @@ $header-max-width: 1680px;
         max-width: 6.27rem;
         height: 4rem;
       }
+      @include layoutTablet {
+        margin-right: 3rem;
+        .logo {
+          height: 2.8rem;
+        }
+      }
+    }
+    @include layoutTablet {
+      .box-gnb ul .btn {
+        height: 44px;
+      }
+    }
+    .box-util {
+      gap: 0;
+      padding: 0;
     }
   }
+}
+
+.searchBarBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

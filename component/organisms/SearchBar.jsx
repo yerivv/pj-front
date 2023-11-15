@@ -31,7 +31,7 @@ const SearchBar = ({
       style={{ display: small ? 'none' : 'block' }}
     />
   )}
-    <div className={`searchBar ${searchControl ? 'searchControl' : ''}`}>
+    <div className={`search-bar`}>
     <input
         type="search"
         ref={inputRef}

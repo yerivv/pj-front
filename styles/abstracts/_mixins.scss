@@ -76,21 +76,10 @@
   background-position: $positionX $positionY;
 }
 
-//테마 컬러
-@function theme-color($key: 'primary', $variant: 'base') {
-  $map: map-get($theme-colors, $key);
-  @return map-get($map, $variant);
-}
-
 @mixin icon-box($width, $height) {
-  display: inline-block;
+  display: inline-flex;
   width: $width;
   height: $height;
-  background: {
-    size: contain;
-    position: center;
-    repeat: no-repeat;
-  }
   vertical-align: baseline;
   text-indent: -999em;
 }

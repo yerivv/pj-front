@@ -39,7 +39,7 @@ const KcndHeader = ({ pageName }) => {
   useEffect(() => {
     const path = router.pathname;
     setThemeWhite(path === '/');
-    setThemeBlack(path === '/liquor-store');
+    setThemeBlack(path === '/kcnd');
   }, [router.pathname]);
 
   useEffect(() => {
@@ -54,32 +54,33 @@ const KcndHeader = ({ pageName }) => {
     <header className={`header-wrap${themeWhite ? ' themeWhite' : ''}${themeBlack ? ' themeBlack' : ''}${small ? ' small' : ''}`}>
     {small || (
       <div className="container">
-        <h1 className="box-logo">
-          <Link href="#"><a className="logo">대한항공 기내면세점</a></Link>
-        </h1>
-        
-        <div className={`box-search ${searchControl ? 'searchControl' : ''}`}>
-          <SearchBar
-            searchControl={searchControl}
-            setSearchControl={setSearchControl}
-            themeWhite={themeWhite}
-            small={small}
-            searchResult={searchResult}
-            setSearchResult={setSearchResult}
-            brandNameAutoComplete={brandNameAutoComplete}
-            setBrandNameAutoComplete={setBrandNameAutoComplete}
-          />
-        {searchControl || (
-          <>
-          <div className="exchange-rate">
-            오늘의 환율 $1 = 1,356원
+        <div className="box-set">
+          <h1 className="box-logo">
+            <Link href="#"><a className="logo">대한항공 기내면세점</a></Link>
+          </h1>
+          <div className={`box-search ${searchControl ? 'searchControl' : ''}`}>
+            <SearchBar
+              searchControl={searchControl}
+              setSearchControl={setSearchControl}
+              themeWhite={themeWhite}
+              small={small}
+              searchResult={searchResult}
+              setSearchResult={setSearchResult}
+              brandNameAutoComplete={brandNameAutoComplete}
+              setBrandNameAutoComplete={setBrandNameAutoComplete}
+            />
+          {searchControl || (
+            <>
+            <div className="exchange-rate">
+              오늘의 환율 $1 = 1,356원
+            </div>
+            <div className="line"></div>
+            <div className="lang-selectBox">
+              <button className="default-option">한국어</button>
+            </div>
+            </>
+          )}
           </div>
-          <div className="line"></div>
-          <div className="lang-selectBox">
-            <button className="default-option">한국어</button>
-          </div>
-          </>
-        )}
         </div>
         <div className={`box-util`}>
           <ul className="util-menu">
@@ -116,7 +117,7 @@ const KcndHeader = ({ pageName }) => {
                 </a>
               </Link>
             </li>
-            <li>
+            <li className="cart">
               <Link href="#">
                 <a className="menu">
                   <i className="icon icon5"></i>
@@ -184,12 +185,11 @@ const KcndHeader = ({ pageName }) => {
       ) : (
         <>
           <Link href="/employees-mall">
-            <a className="MallLink">임직원몰</a>
+            <a className="mall-link">임직원몰</a>
           </Link>
-          <div className="lineSearch">
-            고객님이 탑승하는 노선 선택
-            <span className="planImage"></span>
-          </div>
+          <button type="button" className="line-search">
+            <span className="text">고객님이 탑승하는 노선 선택</span>
+          </button>
         </>
       )}
         </div>
