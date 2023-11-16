@@ -8,21 +8,39 @@ body {
   background-color: #fff;
   color: $color-black;
   font: {
-    family: $font-default-name, serif;
+    family: 'Pretendard', 맑은 고딕, malgun gothic, AppleGothicNeoSD, Apple SD 산돌고딕 Neo, Microsoft NeoGothic,  Droid sans, sans-serif;
     size: 1.6rem;
     weight: 400;
   }
   line-height: 1.25;
 }
 
-/* 마우스, 터치로 포커스 시 
+input, select, button, textarea {
+  font: {
+    family: 'Pretendard', serif;
+    weight: 400;
+  }
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* 키보드로 포커스 시 */
+button:focus-visible {
+  outline: 1px solid #000;
+}
+a:focus-visible {
+  outline: 1px solid #000;
+}
+
+/* 마우스, 터치로 포커스 시 */
 button:focus:not(:focus-visible) {
   outline: none;
-  box-shadow: 1px 1px 5px rgba(1, 1, 0, .7);
 }
 a:focus:not(:focus-visible) {
   outline: none;
-}*/
+}
 
 /* 스킵 네비게이션 */
 .skip-navigation {
@@ -91,7 +109,7 @@ a:focus:not(:focus-visible) {
 }
 
 .wrapper {
-  main {
-    min-height: 100vh;
-  }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

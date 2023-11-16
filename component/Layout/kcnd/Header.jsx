@@ -39,7 +39,7 @@ const KcndHeader = ({ pageName }) => {
   useEffect(() => {
     const path = router.pathname;
     setThemeWhite(path === '/');
-    setThemeBlack(path === '/kcnd');
+    setThemeBlack(path === '/liq');
   }, [router.pathname]);
 
   useEffect(() => {
