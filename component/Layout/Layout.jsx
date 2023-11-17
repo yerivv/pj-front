@@ -7,6 +7,7 @@ import BasicFooter from "./basic/Footer";
 import GuideFooter from "./guide/Footer";
 import KcndFooter from "./kcnd/Footer";
 import HeadMeta from "../HeadMeta"
+import QuickMenu from "./kcnd/QuickMenu";
 
 const Layout = ({ children }) => {
   const router = useRouter();
@@ -40,6 +41,7 @@ const Layout = ({ children }) => {
       {isGuidePath ? <GuideHeader pageName={pageName} /> : (isKcndPath ? <KcndHeader pageName={pageName} /> : <BasicHeader pageName={pageName} />)}
       <main className={pageType}>
         {children}
+        {isKcndPath && (<QuickMenu />)}
       </main>
       {isGuidePath ? <GuideFooter /> : (isKcndPath ? <KcndFooter /> : <BasicFooter />)}
     </div>

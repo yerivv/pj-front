@@ -58,7 +58,6 @@ $header-max-width: 1680px;
   padding: 0 20px;
   background: linear-gradient(to bottom, $color-black, rgba(0, 69, 56, 0.26) 103%);
   color: $color-white;
-  transition: height 300ms ease-out 0s;
   a {
     color: $color-white;
   }
@@ -598,9 +597,8 @@ $header-max-width: 1680px;
 
 // scroll small
 .header-wrap.small {
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
   width: 100%;
   .container-gnb {
     align-items: center;

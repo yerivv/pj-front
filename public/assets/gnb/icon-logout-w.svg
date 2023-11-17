@@ -1,0 +1,23 @@
+<svg id="icon-submenu-1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_6340" data-name="사각형 6340" class="cls-1" width="30" height="30"/>
+  <g id="icon-signout" transform="translate(3 3)">
+    <rect id="사각형_6443" data-name="사각형 6443" class="cls-1" width="24" height="24"/>
+    <path id="패스_91569" data-name="패스 91569" class="cls-2" d="M174.029,86l3.938,3.938-3.937,3.938" transform="translate(-157.714 -77.938)"/>
+    <line id="선_166" data-name="선 166" class="cls-2" x2="10.5" transform="translate(9.75 12)"/>
+    <path id="패스_91570" data-name="패스 91570" class="cls-2" d="M47.5,56.5H40.75a.75.75,0,0,1-.75-.75v-15a.75.75,0,0,1,.75-.75H47.5" transform="translate(-36.25 -36.25)"/>
+  </g>
+</svg>

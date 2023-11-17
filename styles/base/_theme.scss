@@ -6,6 +6,7 @@ html {
   --logo-white: #{$default-logo};
   --logo-black: #{$default-logo-black};
   --img-plane: #{$default-plane};
+  --img-logo: #{$default-img-logo};
 }
   
 html[data-theme="jin"] {
@@ -16,4 +17,5 @@ html[data-theme="jin"] {
   --logo-white: #{$jin-logo};
   --logo-black: #{$jin-logo-black};
   --img-plane: #{$jin-plane};
+  --img-logo: #{$jin-img-logo};
 }

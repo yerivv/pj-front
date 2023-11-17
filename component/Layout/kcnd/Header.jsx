@@ -25,8 +25,8 @@ const KcndHeader = ({ pageName }) => {
 
 
   const changeHeaderStyle = () => {
-    const stMax = 15;
-    const stMin = 9;
+    const stMax = 120;
+    const stMin = 8;
     if (window.scrollY >= stMax) {
       setSmall(true);
       return
