@@ -35,6 +35,12 @@
   margin: 0 auto;
 }
 
+@mixin min-width {
+  width: 100%;
+  min-width: $width-max;
+  margin: 0 auto;
+}
+
 @mixin blind {
   overflow: hidden;
   position: absolute;

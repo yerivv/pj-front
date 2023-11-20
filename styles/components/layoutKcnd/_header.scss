@@ -1,4 +1,4 @@
-$header-max-width: 1680px;
+
 @mixin display-layoutTablet($view) {
   @include layoutTablet {
     display: $view;
@@ -48,7 +48,7 @@ $header-max-width: 1680px;
 .header-box {
   display: flex;
   align-items: center;
-  max-width: $header-max-width;
+  max-width: 1300px;
   margin: 0 auto;
 }
 // 기본 header
@@ -603,10 +603,10 @@ $header-max-width: 1680px;
   .container-gnb {
     align-items: center;
     .box-logo {
-      min-width: 6.27rem;
-      margin-right: 1rem;
+      min-width: 8.96rem;
+      margin-right: 3rem;
       .logo {
-        min-width: 6.27rem;
+        min-width: 8.96rem;
         height: 4rem;
       }
       @include layoutTablet {
@@ -615,6 +615,9 @@ $header-max-width: 1680px;
           height: 2.8rem;
         }
       }
+    }
+    .box-gnb ul .btn {
+      height: 80px;
     }
     @include layoutTablet {
       .box-gnb ul .btn {

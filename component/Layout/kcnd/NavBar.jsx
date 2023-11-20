@@ -40,7 +40,7 @@ const NavBar = () => {
   return (
     <>
   {navBarView && (
-    <>
+  <>
     <div className={`toolbar-wrap${navBarView ? ' view' : ''}${visible ? '' : ' visible'}`}>
       <ul>
         <li className="home">

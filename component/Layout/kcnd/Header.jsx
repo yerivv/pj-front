@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import useResizeWidth from "../../../hooks/useResizeWidth";
 import SearchBar from "../../organisms/SearchBar";
+import Menu from "./Menu";
 
 const KcndHeader = ({ pageName }) => {
   const router = useRouter();
-
+  const {isTablet} = useResizeWidth();
   //테마 및 스크롤
   const [themeWhite, setThemeWhite] = useState(false);
   const [themeBlack, setThemeBlack] = useState(false);
@@ -48,6 +50,11 @@ const KcndHeader = ({ pageName }) => {
       document.removeEventListener('scroll', changeHeaderStyle);
     };
   }, []);
+
+  const [menuOpen, setMenuOpen] = useState(false);
+  const handleAllMenu = () => {
+    setMenuOpen(!menuOpen)
+  }
 
   return (
     <>
@@ -139,8 +146,9 @@ const KcndHeader = ({ pageName }) => {
       </div>
     )}
       <div className="container-gnb">
-        <div className="box-menu">
-          <span className="menu">전체메뉴</span>
+        <div className={`box-menu${menuOpen ? ' open' : ''}`}>
+          <button onClick={handleAllMenu} className="menu">전체메뉴</button>
+          {isTablet || <Menu small={small} state={menuOpen} />}
         </div>
         <div className="box-logo">
           <Link href="#"><a className="logo">대한항공 기내면세점</a></Link>

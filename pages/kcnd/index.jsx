@@ -1,6 +1,13 @@
+import Merchandise from "../../component/organisms/Merchandise";
+
 const KcndIndex = () => {
   return (
-    <div className="kcnd-page">테스트 </div>
+    <div className="kcnd-page">
+      <div className="section-full">222</div>
+      <div className="section">
+      <Merchandise data="event" />
+      </div>
+    </div>
   )
 }
 

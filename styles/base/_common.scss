@@ -116,4 +116,11 @@ a:focus:not(:focus-visible) {
   main {
     min-height: 150vh;
   }
+
+  .section {
+    @include max-width;
+  }
+  .section-full {
+    @include min-width;
+  }
 }
