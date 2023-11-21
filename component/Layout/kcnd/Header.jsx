@@ -148,7 +148,7 @@ const KcndHeader = ({ pageName }) => {
       <div className="container-gnb">
         <div className={`box-menu${menuOpen ? ' open' : ''}`}>
           <button onClick={handleAllMenu} className="menu">전체메뉴</button>
-          {isTablet || <Menu small={small} state={menuOpen} />}
+          {isTablet || <Menu small={small} state={menuOpen} setState={setMenuOpen} />}
         </div>
         <div className="box-logo">
           <Link href="#"><a className="logo">대한항공 기내면세점</a></Link>

@@ -1,0 +1,129 @@
+{
+  "categories": [
+    {
+      "id": "50",
+      "depth": 1,
+      "iconURL": "/assets/sample/cate-1.png",
+      "name": "주류",
+      "category": [
+        {
+          "id": "5001",
+          "depth": 2,
+          "parentId": "50",
+          "iconURL": null,
+          "name": "와인"
+        },
+        {
+          "id": "5002",
+          "depth": 2,
+          "parentId": "50",
+          "iconURL": null,
+          "name": "블렌디드 위스키"
+        },
+        {
+          "id": "5003",
+          "depth": 2,
+          "parentId": "50",
+          "iconURL": null,
+          "name": "싱글몰트 위스키"
+        },
+        {
+          "id": "5005",
+          "depth": 2,
+          "parentId": "50",
+          "iconURL": null,
+          "name": "브랜디"
+        },
+        {
+          "id": "5004",
+          "depth": 2,
+          "parentId": "50",
+          "iconURL": null,
+          "name": "기타 주류"
+        }
+      ],
+      "productCount": 0,
+      "newProductCount": 0
+    },
+    {
+      "id": "51",
+      "depth": 1,
+      "iconURL": "/assets/sample/cate-2.png",
+      "name": "화장품",
+      "category": [
+        {
+          "id": "5101",
+          "depth": 2,
+          "parentId": "51",
+          "iconURL": null,
+          "name": "에센스/세럼"
+        },
+        {
+          "id": "5102",
+          "depth": 2,
+          "parentId": "51",
+          "iconURL": null,
+          "name": "크림"
+        },
+        {
+          "id": "5103",
+          "depth": 2,
+          "parentId": "51",
+          "iconURL": null,
+          "name": "아이케어"
+        },
+        {
+          "id": "5104",
+          "depth": 2,
+          "parentId": "51",
+          "iconURL": null,
+          "name": "선케어"
+        },
+        {
+          "id": "5105",
+          "depth": 2,
+          "parentId": "51",
+          "iconURL": null,
+          "name": "쿠션/파운데이션"
+        },
+        {
+          "id": "5106",
+          "depth": 2,
+          "parentId": "51",
+          "iconURL": null,
+          "name": "립스틱/립밤"
+        },
+        {
+          "id": "5107",
+          "depth": 2,
+          "parentId": "51",
+          "iconURL": null,
+          "name": "메이크업 키트"
+        },
+        {
+          "id": "5108",
+          "depth": 2,
+          "parentId": "51",
+          "iconURL": null,
+          "name": "남성 기초케어"
+        },
+        {
+          "id": "5110",
+          "depth": 2,
+          "parentId": "51",
+          "iconURL": null,
+          "name": "바디/헤어"
+        },
+        {
+          "id": "5109",
+          "depth": 2,
+          "parentId": "51",
+          "iconURL": null,
+          "name": "기타"
+        }
+      ],
+      "productCount": 0,
+      "newProductCount": 0
+    }
+  ]
+}
