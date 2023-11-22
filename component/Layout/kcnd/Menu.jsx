@@ -3,24 +3,29 @@ import Image from "next/image";
 import { useState } from "react";
 
 export const getServerSideProps = async () => {
-  try {
-    const res = await fetch(`http://localhost:3002/categories`);
-      if(res.status === 200) {
-          const data = await res.json();
-          return {props: {data}};
-        }
-        return {props: {}};
-      } catch(e) {
-        console.log(e);
-        return {props: {}};
+  const res = await fetch('/categories');
+  
+  if (!res.ok) {
+    console.log('Response Error: ', res.status);
+    return {
+      props: {
+        data: null,
+      },
+    };
   }
+  
+  const data = await res.json();
+  console.log('Fetched Data: ', data);
+  
   return {
-    props: {},
-  }
+    props: {
+      data,
+    },
+  };
 };
 
 const Menu = ({ small, state, setState, data }) => {
-  console.log(data);
+  console.log('api-data : ',data)
   const [brand, setBrand] = useState(false);
   const handleBrand = (act) => {
     if(act === 'show'){
@@ -48,11 +53,11 @@ const Menu = ({ small, state, setState, data }) => {
       <div className="list">
         <div className="group">
           <div className="depth1">카테고리</div>
-    {data && data?.map((item) => (
+    {/* {results && results?.map((item) => (
       <div key={`cate-${item.id}`}>
         11{item.id}
       </div>
-    ))}
+    ))} */}
           <ul>
             <li className="depth2" onMouseEnter={() => handleCategory('1')}>
               <Link href="#"><a className={category ? 'open' : ''}><i className="icon"><Image src={`/assets/sample/cate-1.png`} height="40" width="40" alt="" /></i>주류</a></Link>

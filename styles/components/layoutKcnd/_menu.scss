@@ -38,6 +38,8 @@
     }
   }
   button.depth1 {
+    background-image: url('/assets/icons/arrow-right-nobg.svg');
+    @include background-style(3rem 3rem, no-repeat, right, center);
     &:hover {
       background-color: rgba(var(--color-point-rgb), 0.1);
     }
