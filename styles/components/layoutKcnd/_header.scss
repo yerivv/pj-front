@@ -412,9 +412,9 @@
         text-indent: -999em;
         filter: invert(1);
         cursor: pointer;
-      }
-      &.open .menu {
-        background-image: url('/assets/icons/header-close-icon.svg');
+        &.open {
+          background-image: url('/assets/icons/header-close-icon.svg');
+        }
       }
     }
     .box-gnb {

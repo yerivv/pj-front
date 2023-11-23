@@ -124,6 +124,168 @@
       ],
       "productCount": 0,
       "newProductCount": 0
+    },
+    {
+      "id": "52",
+      "depth": 1,
+      "iconURL": "/assets/sample/cate-3.png",
+      "name": "향수",
+      "category": [
+        {
+          "id": "5201",
+          "depth": 2,
+          "parentId": "52",
+          "iconURL": null,
+          "name": "오드뚜알렛"
+        },
+        {
+          "id": "5202",
+          "depth": 2,
+          "parentId": "52",
+          "iconURL": null,
+          "name": "오드퍼퓸"
+        },
+        {
+          "id": "5203",
+          "depth": 2,
+          "parentId": "52",
+          "iconURL": null,
+          "name": "미니어쳐"
+        },
+        {
+          "id": "5204",
+          "depth": 2,
+          "parentId": "52",
+          "iconURL": null,
+          "name": "퍼퓸"
+        },
+        {
+          "id": "5205",
+          "depth": 2,
+          "parentId": "52",
+          "iconURL": null,
+          "name": "니치향수"
+        }
+      ],
+      "productCount": 0,
+      "newProductCount": 0
+    },
+    {
+      "id": "53",
+      "depth": 1,
+      "iconURL": "/assets/sample/cate-4.png",
+      "name": "패션용품",
+      "category": [
+        {
+          "id": "5303",
+          "depth": 2,
+          "parentId": "53",
+          "iconURL": null,
+          "name": "쥬얼리"
+        },
+        {
+          "id": "5302",
+          "depth": 2,
+          "parentId": "53",
+          "iconURL": null,
+          "name": "쥬얼리/시계"
+        },
+        {
+          "id": "5301",
+          "depth": 2,
+          "parentId": "53",
+          "iconURL": null,
+          "name": "패션잡화"
+        }
+      ],
+      "productCount": 0,
+      "newProductCount": 0
+    },
+    {
+      "id": "56",
+      "depth": 1,
+      "iconURL": "/assets/sample/cate-5.png",
+      "name": "선물용품",
+      "category": [
+        {
+          "id": "5601",
+          "depth": 2,
+          "parentId": "56",
+          "iconURL": null,
+          "name": "필기구"
+        },
+        {
+          "id": "5602",
+          "depth": 2,
+          "parentId": "56",
+          "iconURL": null,
+          "name": "어린이용품"
+        },
+        {
+          "id": "5603",
+          "depth": 2,
+          "parentId": "56",
+          "iconURL": null,
+          "name": "기타 선물용품"
+        }
+      ],
+      "productCount": 0,
+      "newProductCount": 0
+    },
+    {
+      "id": "55",
+      "depth": 1,
+      "iconURL": "/assets/sample/cate-6.png",
+      "name": "전자/리빙",
+      "category": [
+        {
+          "id": "5502",
+          "depth": 2,
+          "parentId": "55",
+          "iconURL": null,
+          "name": "리빙용품"
+        },
+        {
+          "id": "5501",
+          "depth": 2,
+          "parentId": "55",
+          "iconURL": null,
+          "name": "전자기기"
+        }
+      ],
+      "productCount": 0,
+      "newProductCount": 0
+    },
+    {
+      "id": "54",
+      "depth": 1,
+      "iconURL": "/assets/sample/cate-7.png",
+      "name": "건강식품",
+      "category": [
+        {
+          "id": "5403",
+          "depth": 2,
+          "parentId": "54",
+          "iconURL": null,
+          "name": "홍삼/산삼"
+        },
+        {
+          "id": "5401",
+          "depth": 2,
+          "parentId": "54",
+          "iconURL": null,
+          "name": "건강식품"
+        },
+        {
+          "id": "5402",
+          "depth": 2,
+          "parentId": "54",
+          "iconURL": null,
+          "name": "초콜릿"
+        }
+      ],
+      "productCount": 0,
+      "newProductCount": 0
     }
   ]
 }

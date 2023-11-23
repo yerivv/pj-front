@@ -1,98 +1,88 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-export const getServerSideProps = async () => {
-  const res = await fetch('/categories');
-  
-  if (!res.ok) {
-    console.log('Response Error: ', res.status);
-    return {
-      props: {
-        data: null,
-      },
-    };
-  }
-  
-  const data = await res.json();
-  console.log('Fetched Data: ', data);
-  
-  return {
-    props: {
-      data,
-    },
-  };
-};
 
-const Menu = ({ small, state, setState, data }) => {
-  console.log('api-data : ',data)
+const Menu = ({ small }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [categories, setCategories] = useState(null);
+  const [activeCategory, setActiveCategory] = useState(null);
   const [brand, setBrand] = useState(false);
-  const handleBrand = (act) => {
-    if(act === 'show'){
-      setCategory(false);
-      setBrand(true);
-    } else {
-      setBrand(false);
-    }
-  };
   const [category, setCategory] = useState(false);
-  const handleCategory = () => {
+
+  useEffect(() => {
+    const fetchCategories = async () => {
+      const response = await fetch('/categories');
+      const data = await response.json();
+      setCategories(data);
+    };
+    fetchCategories();
+  }, []);
+
+  const handleAllMenu = () => {
+    setMenuOpen(!menuOpen);
+    handleHoverClear();
+  }
+
+  const handleCategory = (index) => {
     setBrand(false);
     setCategory(true);
+    setActiveCategory(index);
   }
+
+  const handleBrand = (act) => {
+    setActiveCategory(null);
+    setCategory(false);
+    setBrand(act === 'show');
+  };
+
   const handleHoverClear = () => {
     setBrand(false);
     setCategory(false);
+    setActiveCategory(null);
   }
-  const handleMenuClose = () => {
-    setState(false);
-  }
+
+  const themeRecommendations = [
+    { name: '주류전문관', url: '#' },
+    { name: 'Heart to Heart', url: '#' },
+    { name: '스토리', url: '#' },
+    { name: '카탈로그', url: '#' },
+    { name: '베스트', url: '#' },
+    { name: '이벤트', url: '#' },
+    { name: '임직원몰', url: '#' },
+  ];
+
   return(
     <>
-    <div className={`menu-wrap${state ? ' open' : ''}${small ? ' small' : ''}`}>
+    <button onClick={handleAllMenu} className={`menu${menuOpen ? ' open' : ''}`}>전체메뉴</button>
+    <div className={`menu-wrap${menuOpen ? ' open' : ''}${small ? ' small' : ''}`}>
       <div className="list">
         <div className="group">
           <div className="depth1">카테고리</div>
-    {/* {results && results?.map((item) => (
-      <div key={`cate-${item.id}`}>
-        11{item.id}
-      </div>
-    ))} */}
           <ul>
-            <li className="depth2" onMouseEnter={() => handleCategory('1')}>
-              <Link href="#"><a className={category ? 'open' : ''}><i className="icon"><Image src={`/assets/sample/cate-1.png`} height="40" width="40" alt="" /></i>주류</a></Link>
-              {category && (
-                <div className="detail category">
-                  <ul>
-                    <li><Link href="#"><a>전체</a></Link></li>
-                    <li><Link href="#"><a>에센스 / 세럼</a></Link></li>
-                    <li><Link href="#"><a>크림</a></Link></li>
-                    <li><Link href="#"><a>아이케어</a></Link></li>
-                  </ul>
-                </div>
-              )}
+          {categories && categories.map((item, index) => (
+            <li className={`depth2 ${activeCategory === index ? 'open' : ''}`} onMouseEnter={() => handleCategory(index)} key={`category-${item.id}`}>
+              <Link href={`/kcnd/category/${item.id}`}>
+                <a>
+                  <i className="icon"><Image src={`${item.iconURL}`} height="40" width="40" alt="" /></i>
+                  <span>{item.name}</span>
+                </a>
+              </Link>
+            {item.category.length && (
+              <div className="detail category">
+                <ul>
+                  <li><Link href={`/kcnd/category/${item.id}`}><a>전체</a></Link></li>
+                {item.category.map((subItem) => (
+                  <li key={`category-sub-${subItem.id}`}><Link href={`/kcnd/category/${subItem.parentId}/${subItem.id}`}><a>{subItem.name}</a></Link></li>
+                ))}
+                </ul>
+              </div>
+            )}
             </li>
-            <li className="depth2" onMouseEnter={() => handleCategory('1')}>
-              <Link href="#"><a className={category ? 'open' : ''}><i className="icon"><Image src={`/assets/sample/cate-2.png`} height="40" width="40" alt="" /></i>화장품</a></Link>
-            </li>
-            <li className="depth2" onMouseEnter={() => handleCategory('1')}>
-              <Link href="#"><a className={category ? 'open' : ''}><i className="icon"><Image src={`/assets/sample/cate-3.png`} height="40" width="40" alt="" /></i>향수</a></Link>
-            </li>
-            <li className="depth2" onMouseEnter={() => handleCategory('1')}>
-              <Link href="#"><a className={category ? 'open' : ''}><i className="icon"><Image src={`/assets/sample/cate-4.png`} height="40" width="40" alt="" /></i>패션용품</a></Link>
-            </li>
-            <li className="depth2" onMouseEnter={() => handleCategory('1')}>
-              <Link href="#"><a className={category ? 'open' : ''}><i className="icon"><Image src={`/assets/sample/cate-5.png`} height="40" width="40" alt="" /></i>전자/리빙</a></Link>
-            </li>
-            <li className="depth2" onMouseEnter={() => handleCategory('1')}>
-              <Link href="#"><a className={category ? 'open' : ''}><i className="icon"><Image src={`/assets/sample/cate-6.png`} height="40" width="40" alt="" /></i>건강식품</a></Link>
-            </li>
-            <li className="depth2" onMouseEnter={() => handleCategory('1')}>
-              <Link href="#"><a className={category ? 'open' : ''}><i className="icon"><Image src={`/assets/sample/cate-7.png`} height="40" width="40" alt="" /></i>초콜릿</a></Link>
-            </li>
+          ))}
           </ul>
         </div>
-        <div className="group" onMouseEnter={() => handleBrand('show')}>
+        <div className="group" onMouseEnter={() => handleBrand('show')} onMouseLeave={() => handleBrand('hide')}>
           <button type="button" className={`depth1${brand ? ' open' : ''}`}>브랜드</button>
         {brand && (
           <div className="detail brand">
@@ -169,18 +159,16 @@ const Menu = ({ small, state, setState, data }) => {
         <div className="group">
           <div className="depth1">테마추천</div>
           <ul>
-            <li className="depth2" onMouseEnter={handleHoverClear}><Link href="#"><a>주류전문관</a></Link></li>
-            <li className="depth2"><Link href="#"><a>Heart to Heart</a></Link></li>
-            <li className="depth2"><Link href="#"><a>스토리</a></Link></li>
-            <li className="depth2"><Link href="#"><a>카탈로그</a></Link></li>
-            <li className="depth2"><Link href="#"><a>베스트</a></Link></li>
-            <li className="depth2"><Link href="#"><a>이벤트</a></Link></li>
-            <li className="depth2"><Link href="#"><a>임직원몰</a></Link></li>
+          {themeRecommendations.map((theme) => (
+            <li className="depth2" key={theme.name} onMouseEnter={handleHoverClear}>
+              <Link href={theme.url}><a>{theme.name}</a></Link>
+            </li>
+          ))}
           </ul>
         </div>
       </div>
     </div>
-    <div className={`menu-dim${state ? ' open' : ''}${small ? ' small' : ''}`} onClick={handleMenuClose}></div>
+    <div className={`menu-dim${menuOpen ? ' open' : ''}${small ? ' small' : ''}`} onClick={handleAllMenu}></div>
     </>
   )
 }

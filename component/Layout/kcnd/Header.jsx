@@ -51,11 +51,6 @@ const KcndHeader = ({ pageName }) => {
     };
   }, []);
 
-  const [menuOpen, setMenuOpen] = useState(false);
-  const handleAllMenu = () => {
-    setMenuOpen(!menuOpen)
-  }
-
   return (
     <>
     <header className={`header-wrap${themeWhite ? ' themeWhite' : ''}${themeBlack ? ' themeBlack' : ''}${small ? ' small' : ''}`}>
@@ -146,9 +141,8 @@ const KcndHeader = ({ pageName }) => {
       </div>
     )}
       <div className="container-gnb">
-        <div className={`box-menu${menuOpen ? ' open' : ''}`}>
-          <button onClick={handleAllMenu} className="menu">전체메뉴</button>
-          {isTablet || <Menu small={small} state={menuOpen} setState={setMenuOpen} />}
+        <div className={`box-menu`}>
+          {isTablet || <Menu small={small} />}
         </div>
         <div className="box-logo">
           <Link href="#"><a className="logo">대한항공 기내면세점</a></Link>
