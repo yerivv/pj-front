@@ -24,9 +24,7 @@ $color-etc9: #007898;
 $color-etc10: #e6f6ff;
 
 // font
-$font-default-url : '/static/fonts/Pretendard';
 $font-default-name : 'Pretendard';
-$font-point-url : '/static/fonts/Libre_Baskerville';
 $font-point-name : 'Libre Baskerville';
 
 //breakpoint
@@ -44,4 +42,5 @@ $icon-url2: '/icons/';
 
 $radius: (
   basic: 15px,
+  other: 10px,
 )

@@ -62,7 +62,7 @@ const Menu = ({ small }) => {
           <ul>
           {categories && categories.map((item, index) => (
             <li className={`depth2 ${activeCategory === index ? 'open' : ''}`} onMouseEnter={() => handleCategory(index)} key={`category-${item.id}`}>
-              <Link href={`/kcnd/category/${item.id}`}>
+              <Link href={`/kcnd/category/${item.id}/all`}>
                 <a>
                   <i className="icon"><Image src={`${item.iconURL}`} height="40" width="40" alt="" /></i>
                   <span>{item.name}</span>
@@ -71,7 +71,7 @@ const Menu = ({ small }) => {
             {item.category.length && (
               <div className="detail category">
                 <ul>
-                  <li><Link href={`/kcnd/category/${item.id}`}><a>전체</a></Link></li>
+                  <li><Link href={`/kcnd/category/${item.id}/all`}><a>전체</a></Link></li>
                 {item.category.map((subItem) => (
                   <li key={`category-sub-${subItem.id}`}><Link href={`/kcnd/category/${subItem.parentId}/${subItem.id}`}><a>{subItem.name}</a></Link></li>
                 ))}

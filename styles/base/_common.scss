@@ -8,7 +8,7 @@ body {
   background-color: #fff;
   color: $color-black;
   font: {
-    family: 'Pretendard', 맑은 고딕, malgun gothic, AppleGothicNeoSD, Apple SD 산돌고딕 Neo, Microsoft NeoGothic,  Droid sans, sans-serif;
+    family: 'Pretendard', '맑은 고딕', 'malgun gothic', 'AppleGothicNeoSD', 'Apple SD 산돌고딕 Neo', Microsoft NeoGothic,  Droid sans, sans-serif;
     size: 1.6rem;
     weight: 400;
   }
@@ -112,15 +112,19 @@ a:focus:not(:focus-visible) {
   display: flex;
   flex-direction: column;
   position: relative;
-  min-height: 100vh;
   main {
-    min-height: 150vh;
+    min-height: 80vh;
   }
-
   .section {
     @include max-width;
+    @include mobile {
+      padding:0 2rem;
+    }
   }
   .section-full {
     @include min-width;
+    @include mobile {
+      min-width: auto;
+    }
   }
 }

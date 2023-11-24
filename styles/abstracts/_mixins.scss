@@ -89,3 +89,7 @@
   vertical-align: baseline;
   text-indent: -999em;
 }
+
+@mixin font-other {
+  font-family: $font-point-name;
+}

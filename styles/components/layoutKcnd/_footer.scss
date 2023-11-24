@@ -17,9 +17,12 @@ $footer-max-width: 1680px;
 }
 
 .footer-wrap {
-  margin-top: auto;
+  margin-top: 120px;
   background-color: var(--color-base);
   color: $color-white;
+  @include layoutTablet {
+    margin-top: 40px;
+  }
   .container-cs {
     @extend .footer-box;
     ul {
