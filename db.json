@@ -290,5 +290,37 @@
   ],
   "products" : [
     
+  ],
+  "mainvisual" : [
+    {
+      "id" : 1,
+      "group" : "이벤트",
+      "title" : "High-End<br />Anti-Aging",
+      "desc" : "브랜드마다 내세우는 감동의 안티에이징 솔루션 제품<br />높은 진입장벽에도 불구하고 수많은 이들이 기꺼이 지갑을 여는 이유",
+      "link" : "#",
+      "bgColor" : "#858a8d",
+      "imgPc" : "/assets/sample/main-visual1.jpg",
+      "imgMo" : "/assets/sample/main-visual1.jpg"
+    },
+    {
+      "id" : 2,
+      "group" : "기획전",
+      "title" : "기획전 타이틀",
+      "desc" : "브랜드마다 내세우는 감동의 안티에이징 솔루션 제품1111<br />높은 진입장벽에도 불구하고 수많은 이들이 기꺼이 지갑을 여는 이유",
+      "link" : "#",
+      "bgColor" : "#ff6600",
+      "imgPc" : "/assets/sample/main-visual2.jpg",
+      "imgMo" : "/assets/sample/main-visual2.jpg"
+    },
+    {
+      "id" : 3,
+      "group" : "쿠폰",
+      "title" : "쿠폰 타이틀",
+      "desc" : "브랜드마다 내세우는 감동의 안티에이징 솔루션 제품1111<br />높은 진입장벽에도 불구하고 수많은 이들이 기꺼이 지갑을 여는 이유",
+      "link" : "#",
+      "bgColor" : "#009999",
+      "imgPc" : "/assets/sample/main-visual3.jpg",
+      "imgMo" : "/assets/sample/main-visual3.jpg"
+    }
   ]
 }

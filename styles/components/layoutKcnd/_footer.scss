@@ -100,7 +100,7 @@ $footer-max-width: 1680px;
     border-top: 1px solid $color-gray1;
     @include layoutTablet {
       flex-direction: column;
-      padding: 40px 20px;
+      padding: 40px 20px 100px;
       border-color: #fff;
     }
     h6 {
