@@ -20,7 +20,7 @@ const Merchandise = ({ type, data }) => {
   const handleOffCover = () => {
     setImageClass('image-box')
   }
-  const handleWish = () => {
+  const handleAddWishList = () => {
     alert('찜')
   }
   const handleGift = () => {
@@ -32,44 +32,79 @@ const Merchandise = ({ type, data }) => {
   const handlePurchase = () => {
     alert('바로구매')
   }
+  //품절
+  const backOrdered = false;
+  const adultOnly = false;
+  const isSoldOut = false;
   return (
-    <div className="product-item">
+    <div className="merchandise-item">
       <div className={imageClass} onMouseEnter={handleOnCover} onMouseLeave={handleOffCover}>
+        <div className="thumb-box" onClick={handleOnClickCover}>
+          <div className="thumb"><Image src={'/assets/sample/20220331000317730878.jpg'} width={500} height={500} priority style={{width: '100%', height: '100%'}} alt="상품명" /></div>
+        </div>
         <div className="label-box">
           <span className="label">단하루</span>
           <span className="label">핫딜</span>
         </div>
         <div className="rank-box">
-          <span className="label">1</span>
+          <span className="label top">1</span>
         </div>
-        <div className="thumb-box" onClick={handleOnClickCover}>
-          <div className="thumb"><Image src={'/assets/sample/20220331000317730878.jpg'} width={500} height={500} priority style={{width: '100%', height: '100%'}} alt="상품명" /></div>
+        <div className="other-label-box">
+          <Image src={'/assets/sample/202306141800223069641.png'} width={108} height={42} priority alt="이름" />
         </div>
-        {isTablet || (
+      {isTablet || (
         <div className="cover-box">
           <div className="default">
             <div className="function">
+        {adultOnly ? (
+              <div className="adult-only">
+                <div className="text">
+                  <strong>19</strong>
+                  <span>Adult only</span>
+                </div>
+              </div>
+        ) : !backOrdered && !isSoldOut ? (
+            <>
               <ul>
                 <li>
-                  <button type="button" onClick={handleWish}><i className="icon heart"></i><span className="text">찜하기</span></button>
+                  <button type="button" onClick={handleAddWishList} data-id="functional-button">
+                    <i className="icon heart"></i>
+                    <span className="text">찜하기</span>
+                  </button>
                 </li>
                 <li>
-                  <button type="button" onClick={handleGift}><i className="icon gift"></i><span className="text">선물하기</span></button>
+                  <button type="button" onClick={handleGift}>
+                    <i className="icon gift"></i>
+                    <span className="text">선물하기</span>
+                  </button>
                 </li>
               </ul>
               <ul>
                 <li>
-                  <button type="button" onClick={handleCart}><i className="icon cart"></i><span className="text">장바구니</span></button>
+                  <button type="button" onClick={handleCart}>
+                    <i className="icon cart"></i>
+                    <span className="text">장바구니</span>
+                  </button>
                 </li>
                 <li>
-                  <button type="button" onClick={handlePurchase}><i className="icon purchase"></i><span className="text">바로구매</span></button>
+                  <button type="button" onClick={handlePurchase}>
+                    <i className="icon purchase"></i>
+                    <span className="text">바로구매</span>
+                  </button>
                 </li>
               </ul>
+            </>
+        ) : null}
+        {isSoldOut ? (
+              <div className="sold-out"><span>일시 품절</span></div>
+        ) : null}
             </div>
-            <div className="more"><Link href="#"><a>상세보기</a></Link></div>
+          {!adultOnly ? (
+            <div className="more">
+              <button type="button" onClick={e => handleBtnClick(e)} className={`btn ${backOrdered ? 'restock' : 'detail'}`}>{backOrdered ? '재입고 알림신청' : '상세보기'}</button>
+            </div>
+          ) : null}
           </div>
-          {/* <div className="sold-out">일시 품절/재입고 알림신청</div>
-          <div className="age-limit">연령제한</div> */}
         </div>
       )}
       </div>

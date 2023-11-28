@@ -1,3 +1,5 @@
+import Merchandise from "../../../component/organisms/Merchandise";
+
 const CategoryView = () => {
   return (
     <div className="page-category">
@@ -9,7 +11,10 @@ const CategoryView = () => {
       <div className="section">
         <div>검색필터</div>
         <div>상품정렬</div>
-        <div>상품목록</div>
+        <div className="section merchandise-wrap" style={{marginTop: '40px'}}>
+          <Merchandise data="category" />
+          <Merchandise data="category" />
+        </div>
       </div>
     </div>
   )
