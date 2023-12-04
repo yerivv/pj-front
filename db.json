@@ -322,5 +322,19 @@
       "imgPc" : "/assets/sample/main-visual3.jpg",
       "imgMo" : "/assets/sample/main-visual3.jpg"
     }
+  ],
+  "banner3" : [
+    {
+      "id" : 1,
+      "link" : "#",
+      "imgPc" : "/assets/sample/banner-type3-1.jpg",
+      "imgMo" : "/assets/sample/banner-type3-1.jpg"
+    },
+    {
+      "id" : 2,
+      "link" : "#",
+      "imgPc" : "/assets/sample/banner-type3-2.jpg",
+      "imgMo" : "/assets/sample/banner-type3-2.jpg"
+    }
   ]
 }

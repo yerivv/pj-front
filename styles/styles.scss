@@ -16,7 +16,9 @@
 @import 
   'components/layout/header',
   'components/layout/footer',
-  'components/merchandise'; //공통 상품
+  'components/merchandise', //공통 상품
+  'components/banners' //공통 배너
+;
 
 @import 
   'pages/guide', //가이드

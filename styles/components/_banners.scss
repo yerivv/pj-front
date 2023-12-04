@@ -1,0 +1,78 @@
+.banner-type-swiper {
+  .item {
+    display: block;
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+    .image-box {
+      span, img {
+        vertical-align: top;
+      }
+    }
+    .text-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 1;
+      width: 100%;
+      max-width: 1300px;
+      transform: translate(-50%, -50%);
+      color: $color-white;
+    }
+  }
+  .type1 {
+    .image-box {
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(var(--color-base-rgb), 0.3);
+      }
+    }
+  }
+}
+
+.swiper.mySwiper {
+  .swiper-pagination-progressbar {
+    top: auto;
+    bottom: 100px;
+    left: 50%;
+    max-width: 1300px;
+    transform: translateX(-50%);
+  }
+
+  .swiper-pagination-fraction {
+    right: 40px;
+    left: auto;
+    width: auto;
+    padding: 6px 8px 6px 10px;
+    @include border-radius(basic);
+    background-color: rgba(var(--color-base-rgb), 0.5);
+  }
+
+  .swiper-control-box {
+    position: absolute;
+    bottom: 40px;
+    right: 50%;
+    z-index: 2;
+    margin-right: -610px;
+    .control-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0 5px;
+      padding: 6px 8px 6px 10px;
+      @include border-radius(basic);
+      background-color: rgba(var(--color-base-rgb), 0.5);
+    }
+    .fraction {
+      color: $color-white;
+      span {
+        opacity: .5;
+      }
+    }
+  }
+}
