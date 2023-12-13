@@ -1,8 +1,15 @@
-const MenuMo = () => {
+import Link from "next/link";
+
+const MenuMo = ({ moMenu }) => {
   return(
-    <div className="menu-wrap">
-      메뉴오픈
-    </div>
+    <>
+    {moMenu && (
+      <div className="menu-wrap-mo">
+        메뉴오픈
+        <Link href="/category"><a>카테고리 이동</a></Link>
+      </div>
+    )}
+    </>
   )
 }
 

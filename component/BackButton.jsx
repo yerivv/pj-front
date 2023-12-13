@@ -3,12 +3,16 @@ import { useRouter } from "next/router";
 const BackButton = () => {
   const router = useRouter();
   const currentURL = router.asPath;
-  //console.log('asPath : ',currentURL);
+  console.log('asPath : ',currentURL);
 
   const handelHistoryBack = () => {
     if(currentURL == '/order/success') {
       router.replace('/');
-    } else {
+    } 
+    // else if() {
+
+    // } 
+    else {
       router.back();
     }
   }

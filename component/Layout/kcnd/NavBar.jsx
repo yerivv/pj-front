@@ -19,6 +19,7 @@ const NavBar = () => {
   
   const [position, setPosition] = useState(window.offsetTop);
   const [visible, setVisible] = useState(true);
+  const [moMenu, setMoMenu] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,7 +37,16 @@ const NavBar = () => {
     };
   }, [position]);
 
-  const menuClick = () => {console.log('1')}
+  const menuClick = () => {
+    const currentQuery = { ...router.query };
+    currentQuery.menu = 'open';
+    router.replace({
+      pathname: router.pathname,
+      query: currentQuery,
+    });
+    window.history.pushState({}, '', `${router.pathname}?${new URLSearchParams(currentQuery)}`);
+    setMoMenu(true)
+  }
   return (
     <>
   {navBarView && (
@@ -83,7 +93,7 @@ const NavBar = () => {
         </li>
       </ul>
     </div>
-    <MenuMo />
+    <MenuMo moMenu={moMenu} />
   </>
   )}
     </>
