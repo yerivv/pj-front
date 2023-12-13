@@ -30,7 +30,7 @@
   font-family: $font-default-name;
   font-weight: 700;
 	font-display: swap;
-	src: local('#{$font-default-name} Bold'), 
+	src: 
     url('/fonts/#{$font-default-name}/woff2/Pretendard-Bold.woff2') format('woff2'), 
     url('/fonts/#{$font-default-name}/woff/Pretendard-Bold.woff') format('woff');
 }

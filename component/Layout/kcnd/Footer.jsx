@@ -61,6 +61,7 @@ const KcndFooter = () => {
           </li>
         </ul>
       </div>
+      <div className="line"></div>
       <div className="container">
         <div className="company-info">
           <h6>대한항공씨앤디서비스(주)</h6>

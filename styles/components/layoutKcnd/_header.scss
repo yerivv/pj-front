@@ -444,6 +444,7 @@
           padding-top: 4px;
           border-bottom: 4px solid transparent;
           font-size: 2rem;
+          white-space: nowrap;
           &:hover {
             text-decoration: underline;
             text-underline-position: under;
@@ -482,6 +483,7 @@
         border: 1px solid $color-white;
         background-color: transparent;
         font-weight: 600;
+        text-align: center;
       }
       .line-search {
         position: relative;

@@ -25,7 +25,7 @@ const KcndIndex = ({ mainBannerData, banner3 }) => {
         <BannerType type={`type1`} data={mainBannerData} />
       </div>
       <div className="section merchandise-wrap" style={{marginTop: '40px'}}>
-      <Merchandise data="event" />
+        <Merchandise data="event" />
       </div>
       <div className="section">
         <BannerType type={`type3`} data={banner3} />
