@@ -40,13 +40,25 @@ const NavBar = () => {
   const menuClick = () => {
     const currentQuery = { ...router.query };
     currentQuery.menu = 'open';
+  
     router.replace({
       pathname: router.pathname,
       query: currentQuery,
     });
+  
     window.history.pushState({}, '', `${router.pathname}?${new URLSearchParams(currentQuery)}`);
-    setMoMenu(true)
+  
+    setMoMenu(true);
   }
+
+  useEffect(() => {
+    if (router.query.menu === 'open') {
+      setMoMenu(true);
+    } else {
+      setMoMenu(false);
+    }
+  }, [router]);
+
   return (
     <>
   {navBarView && (

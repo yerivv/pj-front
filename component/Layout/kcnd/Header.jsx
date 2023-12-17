@@ -151,7 +151,7 @@ const KcndHeader = ({ pageName }) => {
           <div className="menus">
             <ul>
               <li className="active">
-                <Link href="#"><a className="btn">베스트</a></Link>
+                <Link href="/kcnd/best"><a className="btn">베스트</a></Link>
               </li>
               <li>
                 <Link href="#"><a className="btn">세일</a></Link>
