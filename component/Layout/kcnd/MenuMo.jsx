@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const MenuMo = ({ moMenu }) => {
+const MenuMo = ({ moMenu, closeModal }) => {
   return(
     <>
     {moMenu && (
@@ -8,7 +8,7 @@ const MenuMo = ({ moMenu }) => {
         메뉴오픈
         <Link href="/category"><a>카테고리 이동</a></Link>
 
-        <div className="close">닫기</div>
+        <div className="close" onClick={closeModal}>닫기</div>
       </div>
     )}
     </>

@@ -37,34 +37,32 @@ const NavBar = () => {
   }, [position]);
 
   const [moMenu, setMoMenu] = useState(false);
+
+  const updateQuery = (newQuery) => {
+    const currentQuery = { ...router.query, ...newQuery };
+    router.replace({
+      pathname: router.pathname,
+      query: currentQuery,
+    });
+  };
+
   const menuClick = () => {
+    updateQuery({ menu: 'open' });
     setMoMenu(true);
   };
 
   const closeModal = () => {
+    const currentQuery = { ...router.query };
+    delete currentQuery.menu;
+    updateQuery(currentQuery);
     setMoMenu(false);
   };
-  
-  useEffect(() => {
-    const handlePopState = () => {
-      // 뒤로가기 이벤트 발생 시 localStorage에서 모달 상태를 읽어와 열거나 닫음
-      const storedMoMenu = localStorage.getItem('moMenu');
-      setMoMenu(storedMoMenu === 'true');
-    };
-
-    window.addEventListener('popstate', handlePopState);
-
-    return () => {
-      window.removeEventListener('popstate', handlePopState);
-    };
-
-  }, []); // 의존성 배열이 비어있는 이유는 한 번만 등록/해제하고 싶기 때문입니다.
 
   useEffect(() => {
-    // 모달 상태가 변경될 때마다 localStorage에 저장
-    localStorage.setItem('moMenu', moMenu.toString());
-    console.log('moMenu stored in localStorage:', moMenu);
-  }, [moMenu]);
+    if (router.query.menu === 'open') {
+      setMoMenu(true);
+    }
+  }, [router]);
 
 
   return (
