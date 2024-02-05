@@ -47,7 +47,6 @@
     padding: 55px 0;
     background-color: $color-bg1;
     @extend .border-style;
-    cursor: pointer;
     @include mobile {
       padding: 25px 0;
     }
@@ -125,172 +124,140 @@
     img {
       mix-blend-mode: darken;
       width: 100%;
-      &.adult {
-        filter: blur(5px);
-      }
     }
   }
   .cover-box {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 1;
     width: 100%;
     height: 100%;
     padding: 10px;
-    background-color: rgba(149, 149, 149, 0.4);
+    background-color: rgba(0, 0, 0, 0.47);
+    backdrop-filter: blur(5px);
     opacity: 0;
     transition: opacity .2s;
     @extend .border-style;
-
-    .default {
-      position: relative;
-      height: 100%;
-      .function {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 40px 0;
-        width: 100%;
-        height: 100%;
-        padding: 40px;
-        ul {
-          display: flex;
-          justify-content: center;
-          &:last-child {
-            margin-bottom: 44px;
-          }
-          li {
-            & + li {
-              margin-left: auto
-            }
-            width: 80px;
-            text-align: center;
-            button {
-              display: block;
-            }
-            .icon {
-              display: block;
-              width: 80px;
-              height: 80px;
-              margin-bottom: 20px;
-              border-radius: 50%;
-              background-color: rgba(256, 256, 256, 0.7);
-              @include background-style(40px 40px);
-              &:hover {
-                background-color: rgba(256, 256, 256, 1);
-              }
-              &.heart {
-                background-image: url('/icons/product/icon-heart.svg');
-              }
-              &.gift {
-                background-image: url('/icons/product/icon-gift.svg');
-              }
-              &.cart {
-                background-image: url('/icons/product/icon-cart.svg');
-              }
-              &.purchase {
-                background-image: url('/icons/product/icon-purchase.svg');
-              }
-            }
-            .text {
-              color: $color-white;
-              font-size: 15px;
-              font-weight: 700;
-              line-height: 18px;
-            }
-          }
-        }
-      }
-      .adult-only {
-        position:relative;
-        width: 96%;
-        padding-bottom: 96%;
-        margin: 0 auto;
-        text-align: center;
-        &::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          border-radius: 50%;
-          border: 10px solid $color-red;
-        }
-        .text {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          font-size: 15px;
-          font-weight: 700;
-          line-height: 16px;
-          strong {
-            font-size: 75px;
-            line-height: 80px;
-          }
-        }
-      }
-      .sold-out {
-        width: auto;
-        height: 44px;
-        padding: 0 18px;
-        margin: 0 auto;
-        @include border-radius(other);
-        border: 1px solid #707070;
-        background-color: $color-gray2;
-        color: $color-white;
-        font-size: 20px;
-        line-height: 42px;
-      }
-      .more {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        margin-top: auto;
-        text-align: center;
-        .btn {
-          display: block;
-          width: 100%;
-          height: 44px;
-          margin-top: auto;
-          @include border-radius(other);
-          border: 1px solid #959595;
-          background-color: $color-white;
-          font-size: 20px;
-          &.restock {
-            width: auto;
-            padding: 0 10px;
-            margin: 0 auto;
-          }
-        }
-      }
+    &.white {
+      background-color: rgba(256, 256, 256, 0.2);
     }
   }
   .hover .cover-box {
     opacity: 1;
   }
+  .function {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: $color-white;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem 0;
+      li {
+        display: flex;
+        flex-direction: column;
+        width: 66px;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        font-weight: 600;
+        text-align: center;
+        .ico {
+          width: 50px;
+          height: 50px;
+          margin: 0 auto 5px;
+          border-radius: 50%;
+          background-color: rgba(256, 256, 256, 0.67);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 25px 25px;
+        }
+        &.wish {
+          .ico {
+            background-image:url('/assets/icons/icon-prd-heart.png');
+          }
+        }
+        &.gift {
+          .ico {
+            background-image:url('/assets/icons/icon-prd-gift.png');
+          }
+        }
+        &.cart {
+          .ico {
+            background-image:url('/assets/icons/icon-prd-cart.png');
+          }
+        }
+        &.purchase {
+          .ico {
+            background-image:url('/assets/icons/icon-prd-purchase.png');
+          }
+        }
+        &:hover .ico {
+          background-color: rgba(256, 256, 256, 1);
+        }
+        &.sold-out {
+          width: 100%;
+          height: 50px;
+          border-radius: 10px;
+          background-color: #393939;
+          font-size: 1.8rem;
+          line-height: 50px;
+          font-weight: 500;
+        }
+        &.restock {
+          width: 160px;
+          padding: 16px 0 15px;
+          border-radius: 25px;
+          background-color: $color-white;
+          color: $color-black;
+          font-size: 1.7rem;
+          line-height: 1.9rem;
+        }
+      }
+      &.default {
+        margin-top: 26px;
+      }
+      &.sold-out-restock {
+        align-items: flex-start;
+        gap: 1rem 1.7rem;
+        width: 227px;
+        margin: 0 auto;
+        .wish {
+          width: 50px;
+        }
+      }
+      &.sold-out {
+        width: 122px;
+        margin: 0 auto;
+        .sold-out {
+          background-color: rgba(65, 65, 65, 0.6);
+        }
+      }
+      &.adult {
+        .badge {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    }
+  }
   .info-box {
-    margin-top: 20px;
-    font-size: 20px;
-    line-height: 24px;
+    margin-top: 1.5rem;
     @include mobile {
-      margin-top: 10px;
-      font-size: 11px;
-      line-height: 12px;
+      margin-top: 1rem;
     }
     .brand {
-      min-height: 18px;
-      margin-bottom: 5px;
-      color: $color-gray2;
-      font-size: 15px;
-      line-height: 18px;
+      min-height: 1.9rem;
+      margin-bottom: 0.8rem;
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 1.9rem;
       @include line-clamp(1);
       @include mobile {
         margin-bottom: 0;
@@ -300,8 +267,11 @@
       }
     }
     .name {
-      min-height: 48px;
-      font-weight: 700;
+      max-height: 4.4rem;
+      margin-bottom: 0.8rem;
+      color: $color-gray4;
+      font-size: 1.5rem;
+      line-height: 2.2rem;
       @include line-clamp(2);
       @include mobile {
         min-height: 36px;
@@ -312,28 +282,29 @@
     .price-info {
       display: flex;
       flex-wrap: wrap;
-      align-items: flex-end;
-      min-height: 59px;
-      margin-top: 20px;
-      @include mobile {
-        margin-top: 10px;
-      }
+      align-items: center;
+      gap: 0 .5rem;
       .origin {
-        color: $color-gray2;
+        color: $color-gray4;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 2.4rem;
+        text-decoration: line-through;
       }
       .discount {
-        margin-left: 10px;
         color: $color-red;
+        font-size: 2rem;
         font-weight: 700;
-        @include mobile {
-          margin-left: 5px;
-        }
       }
       .price {
-        margin-top: 5px;
+        margin-top: 0.3rem;
         width: 100%;
-        font-size: 25px;
-        line-height: 30px;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        strong {
+          font-size: 2rem;
+          font-weight: 700;
+        }
         @include mobile {
           font-size: 15px;
           line-height: 18px;
@@ -343,8 +314,8 @@
     .label {
       display: flex;
       flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 20px;
+      gap: 5px;
+      margin-top: 2rem;
       @include mobile {
         gap: 4px;
         margin-top: 10px;
@@ -355,8 +326,8 @@
         border: 1px solid $color-line1;
         background-color: $color-white;
         color: $color-gray2;
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
       }
     }
   }

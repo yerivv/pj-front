@@ -25,6 +25,8 @@ const NavBar = () => {
       const moving = window.scrollY;
       setVisible(position > moving);
       setPosition(moving);
+
+      console.log(position, moving)
       
       if (window.scrollY <= 60 || window.scrollY >= document.documentElement.scrollHeight - window.innerHeight - 80) {
         setVisible(true);
