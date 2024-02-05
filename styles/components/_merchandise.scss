@@ -142,9 +142,9 @@
     &.white {
       background-color: rgba(256, 256, 256, 0.2);
     }
-  }
-  .hover .cover-box {
-    opacity: 1;
+    &.hover {
+      opacity: 1;
+    }
   }
   .function {
     position: absolute;
@@ -253,7 +253,6 @@
       margin-top: 1rem;
     }
     .brand {
-      min-height: 1.9rem;
       margin-bottom: 0.8rem;
       font-weight: 600;
       font-size: 1.6rem;

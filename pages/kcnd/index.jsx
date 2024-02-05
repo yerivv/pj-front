@@ -27,7 +27,9 @@ const KcndIndex = ({ mainBannerData, banner3, products }) => {
         <BannerType type={`type1`} data={mainBannerData} />
       </div>
       <div className="section merchandise-wrap" style={{marginTop: '40px'}}>
-        <Merchandise type="event" data={products} />
+        {products?.map((product) => (
+          <Merchandise type="event" product={product} key={product.id} />
+        ))}
       </div>
       <div className="section">
         <BannerType type={`type3`} data={banner3} />

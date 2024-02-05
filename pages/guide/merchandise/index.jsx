@@ -18,22 +18,15 @@ const Merchandise = () => {
       <div className="merchandise-wrap" style={{'width': '1300px', 'marginTop': '20px'}}>
         {/* 상품 1개 */}
         <div className="merchandise-item">
-          <div className={`image-box${isMouseHover ? ' hover' : ''}`} onMouseEnter={handleOnMouseEnter} onMouseLeave={handleOnMouseLeave}>
+          <div className={`image-box`}>
             <div className="thumb-box">
               <Link href="#">
                 <a className="thumb"><Image src={'/assets/sample/20210830185941677814.jpg'} width={500} height={500} priority style={{width: '100%', height: '100%'}} alt="상품명" /></a>
               </Link>
             </div>
             <Link href="#">
-              <a className="cover-box">
-                <div className="function">
-                  <ul className="default">
-                    <li className="wish"><i className="ico"></i><span>찜하기</span></li>
-                    <li className="gift"><i className="ico"></i><span>선물하기</span></li>
-                    <li className="cart"><i className="ico"></i><span>장바구니</span></li>
-                    <li className="purchase"><i className="ico"></i><span>바로구매</span></li>
-                  </ul>
-                </div>
+              <a className={`cover-box${isMouseHover ? ' hover' : ''}`} onMouseEnter={handleOnMouseEnter} onMouseLeave={handleOnMouseLeave}>
+                <Cover />
               </a>
             </Link>
           </div>
@@ -194,6 +187,21 @@ const Merchandise = () => {
         </div>
         {/* //상품 1개 - merchandise-item */}
       </div>
+    </div>
+    </>
+  )
+}
+
+const Cover = () => {
+  return (
+    <>
+    <div className="function">
+      <ul className="default">
+        <li className="wish"><i className="ico"></i><span>찜하기</span></li>
+        <li className="gift"><i className="ico"></i><span>선물하기</span></li>
+        <li className="cart"><i className="ico"></i><span>장바구니</span></li>
+        <li className="purchase"><i className="ico"></i><span>바로구매</span></li>
+      </ul>
     </div>
     </>
   )
